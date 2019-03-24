@@ -5,7 +5,13 @@ date:   2018-10-31 14:00:00 +0800
 categories: Machine Learning
 ---
 
-The deep feed forward neural network is similar to the softmax regression model but is composed of more hidden layers. First, let's import TensorFlow and our MNIST data set.
+The deep feed forward neural network is similar to the softmax regression model but is composed of more hidden layers. Deep feed forward networks have the following characteristics:
+
+1. Perceptrons are arranged in layers, with the first layer taking in inputs and the last layer producing outputs. The middle layers have no connection with the external world, and hence are called hidden layers.
+2. Each perceptron in one layer is connected to every perceptron on the next layer. Hence information is constantly "fed forward" from one layer to the next, and this explains why these networks are called feed-forward networks.
+3. There is no connection among perceptrons in the same layer.
+
+Now that we understand what a deep feed forward neural network is, let's import TensorFlow and our MNIST data set.
 
 ```python
 import tensorflow as tf

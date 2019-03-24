@@ -7,15 +7,15 @@ categories: Quantum Computing
 
 A vertex cover is a set of vertices such that each edge of the graph is incident with at least one vertex in the set.  A minimum vertex cover is the vertex cover of the smallest size. In graph theory; two vertices are adjacent if they are connected by an edge and incident if they share a vertex.
 
-![graph]({{site.baseurl}}/assets/img/vertexgraph.png)
-*Vertex and edge in a general graph.*
-
 We describe the process of solving problems on the quantum computer in two steps:
 
 1. Formulate the problem as a binary quadratic model (BQM).
 2. Solve the BQM with a D-wave system or classical sampler. 
 
 A binary quadratic model is a collection of binary-valued variables (variables that can be assigned two values, for example -1, 1) with associated linear and quadratic biases. Sometimes referred to in other tools as a problem. In this example, a function in Ocean software handles both steps. Our task is mainly to select the sampler used to solve the problem.
+
+![graph]({{site.baseurl}}/assets/img/vertexgraph.png)
+*Vertex and edge in a general graph.*
 
 We will be using a D-Wave System to find the minimum vertex cover of a star graph. The real-world application for this example might be a network provider’s routers interconnected by fiber-optic cables or traffic lights in a city’s intersections. It is posed as a graph problem; here, the five-node star graph shown below. Intuitively, the solution to this small example is obvious — the minimum set of vertices that touch all edges is node 0, but the general problem of finding such a set is NP-hard.
 

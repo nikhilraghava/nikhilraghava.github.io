@@ -127,6 +127,6 @@ sudo chown -R $(whoami):admin /usr/local/share/man
 ```bash
 qemu-system-x86_64 -drive format=raw,file=boot.bin
 ```
-QEMU will open up in a separate window and boom you have written your very own bootloader!  C O N G R A T U L A T I O N S!
+QEMU will open up in a separate window and boom you have written your very own bootloader!
 
 ![xBoot QEMU]({{site.baseurl}}/assets/img/xBoot.png)

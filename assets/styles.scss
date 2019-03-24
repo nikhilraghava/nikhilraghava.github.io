@@ -92,7 +92,7 @@ ol, ul {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 40px; 
+  padding-inline-start: 40px;
 }
 
 li {
@@ -100,9 +100,9 @@ li {
 }
 
 ul.list-style-none {
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0; 
+  padding-left: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; 
 }
 
 // If a user adds a custom font, this component will stop it from bleeding into GitHub components:

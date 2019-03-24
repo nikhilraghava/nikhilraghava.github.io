@@ -59,6 +59,8 @@ The idea of the method is as follows: one starts with an initial guess which is 
 
 ### Results
 
+Now, let's guess some roots.
+
 ```python
 if __name__ == '__main__':
     # Run test - guessed roots
