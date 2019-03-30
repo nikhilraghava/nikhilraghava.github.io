@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Deep Feed Forward Neural Networks with TensorFlow"
-date:   2018-10-31 14:00:00 +0800
+date:   2018-10-22 14:00:00 +0800
 categories: Machine Learning
 ---
 

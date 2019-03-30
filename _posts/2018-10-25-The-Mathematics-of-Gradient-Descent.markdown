@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Mathematics of Gradient Descent"
-date:   2018-10-31 14:44:55 +0800
+date:   2018-10-25 14:44:55 +0800
 categories: Machine Learning
 ---
 

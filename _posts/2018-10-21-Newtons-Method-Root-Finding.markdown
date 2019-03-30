@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Newton's Method for Finding Roots"
-date:   2018-10-31 16:12:55 +0800
+date:   2018-10-21 16:12:55 +0800
 categories: Machine Learning
 mathjax: true
 ---

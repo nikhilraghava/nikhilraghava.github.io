@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Linear Regression with TensorFlow"
-date:   2018-10-31 12:44:53 +0800
+date:   2018-10-23 12:44:53 +0800
 categories: Machine Learning
 ---
 

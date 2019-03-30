@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introduction to Linear Regression"
-date:   2018-10-31 11:31:52 +0800
+date:   2018-10-20 11:31:52 +0800
 categories: Machine Learning
 ---
 In statistics, linear regression is a linear approach to modelling the relationship between a scalar response and one or more explanatory variables. The case of one explanatory variable is called simple linear regression. For more than one explanatory variable, the process is called multiple linear regression. Put simply, linear regression is all about finding the optimal values of `m` and `c`  in `y = mx + c`. 

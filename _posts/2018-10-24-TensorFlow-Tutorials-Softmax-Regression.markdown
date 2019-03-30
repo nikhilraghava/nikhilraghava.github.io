@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Softmax Regression with TensorFlow"
-date:   2018-10-31 13:44:57 +0800
+date:   2018-10-24 13:44:57 +0800
 categories: Machine Learning
 ---
 
