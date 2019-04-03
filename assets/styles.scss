@@ -21,6 +21,14 @@ img {
   border-radius: 8px;
 }
 
+img.marvel {
+  border-radius: 0px;
+}
+
+h1.myname {
+  font-size: 2em !important;
+}
+
 // Code block
 div.highlight {
   margin-top: 16px;
@@ -103,6 +111,11 @@ ul.list-style-none {
   padding-left: 0 !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important; 
+}
+
+// Object tag
+object {
+  pointer-events: none;
 }
 
 // Table
