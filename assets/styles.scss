@@ -29,6 +29,26 @@ h1.myname {
   font-size: 2em !important;
 }
 
+.plainlink {
+  text-decoration: none;
+}
+
+.plainlink:hover {
+  text-decoration: none;
+}
+
+.boldtext {
+  font-weight: 600;
+}
+
+.talltext {
+  font-size: 1.3em !important;
+}
+
+.mediumtext {
+  font-size: 1.1em !important;
+}
+
 // Code block
 div.highlight {
   margin-top: 16px;

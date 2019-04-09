@@ -47,16 +47,9 @@
         {% endfor %}
       </div>
     {% endif %}
-    <!-- MARVEL -->
-    <p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
-      Check out my reviews ⬇️
-    </p>
-    <a href="/marvel">
-      <img class="marvel" width="185" height="100" src="{{site.baseurl}}/assets/img/marvelnav.svg">
-    </a>
     <!-- Hire Me -->
-    {% if user.hireable %}
-      <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
-    {% endif %}
+    <a href="/assets/docs/Nikhil_Raghavendra_Resume.pdf" class="plainlink">
+      <span title="My Resume" class="mediumtext d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">My Resume</span>
+    </a>
   </div>
 {% endif %}
