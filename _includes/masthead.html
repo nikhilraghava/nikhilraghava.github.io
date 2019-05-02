@@ -15,7 +15,7 @@
     {% if user.name %}
       <div class="{{ metadata_styles }}">
         {% octicon mark-github height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:GitHub %}
-        <a href="https://github.com/{{ user.login }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+        <a href="https://github.com/{{ user.login }}" class="black-link">
           @{{ user.login }}
         </a>
       </div>
@@ -47,9 +47,9 @@
         {% endfor %}
       </div>
     {% endif %}
-    <!-- Hire Me -->
+    <!-- My Resume -->
     <a href="/assets/docs/Nikhil_Raghavendra_Resume.pdf" class="plainlink">
-      <span title="My Resume" class="mediumtext d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">My Resume</span>
+      <span title="My Resume" class="mediumtext upcase outline d-inline-block f5 rounded-2 py-1 px-2">My Resume</span>
     </a>
   </div>
 {% endif %}

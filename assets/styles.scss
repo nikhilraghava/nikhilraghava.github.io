@@ -5,13 +5,41 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700');
 @import 'highlight-syntax';
 
+@font-face {
+  font-family: 'Colfax';
+  src: url(/assets/fonts/Colfax-Light.woff) format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Colfax';
+  src: url(/assets/fonts/Colfax-Regular.woff) format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Colfax';
+  src: url(/assets/fonts/Colfax-Medium.woff) format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Colfax';
+  src: url(/assets/fonts/Colfax-Bold.woff) format('woff');
+  font-weight: 700;
+}
+
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Colfax';
 }
 
 // White background
 div.bg-gray-light {
   background: #ffffff !important;
+}
+
+a {
+  color: #000000 !important;
 }
 
 img {
@@ -21,12 +49,43 @@ img {
   border-radius: 8px;
 }
 
-img.marvel {
-  border-radius: 0px;
+.section-head {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 400 !important;
+}
+
+.f00-light {
+  font-size: 2em !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  font-weight: 400 !important;
+  padding-bottom: 5px;
+}
+
+div p.mb-5 {
+  margin-bottom: 15px !important;
 }
 
 h1.myname {
-  font-size: 2em !important;
+  font-size: 1.5em !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 400 !important;
+}
+
+.repocard-title {
+  font-weight: 400 !important;
+}
+
+.black-link {
+  color: #000000 !important;
+}
+
+.upcase {
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  font-weight: 400 !important;
 }
 
 .plainlink {
@@ -46,7 +105,19 @@ h1.myname {
 }
 
 .mediumtext {
+  color: #586069;
   font-size: 1.1em !important;
+}
+
+// Border outline for resume span
+.outline {
+  border: solid #586069 1px;
+}
+
+.outline:hover {
+  color: #ffffff;
+  background: #586069;
+  border: solid #586069 1px;
 }
 
 // Code block
@@ -154,7 +225,7 @@ table tr {
 }
   
 table tr th {
-  font-weight: bold;
+  font-weight: 500;
   border: 1px solid #cccccc;
   text-align: left;
   margin: 0;
@@ -178,7 +249,7 @@ table tr th :last-child, table tr td :last-child {
 
 // If a user adds a custom font, this component will stop it from bleeding into GitHub components:
 .github-component {
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol !important;
+  font-family: 'Colfax'
 }
 
 .repo-language-color {
@@ -199,7 +270,16 @@ table tr th :last-child, table tr td :last-child {
 
 .article {
   h1, h2, h3, h4 {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  strong {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.1em;
   }
 
   blockquote {
