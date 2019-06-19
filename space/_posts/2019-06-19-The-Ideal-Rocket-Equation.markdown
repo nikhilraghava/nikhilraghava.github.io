@@ -9,13 +9,17 @@ mathjax: true
 ![Falcon Heavy Exhaust]({{site.baseurl}}/assets/img/fhengine.jpg)
 *SpaceX's Falcon Heavy exhaust plumes [Arabsat-6A Mission].*
 
-The first gunpowder-powered rockets were invented centuries ago, and since then rocket propulsion technology has evolved to the point where we now use electric propulsion to drive our space probes to the edge of our solar system. The ideal rocket equation and Newton's Laws of Motion, among other things (aerodynamics, etc.), dictate the performance of a rocket. The ideal rocket equation or the Tsiolkovsky rocket equation is fundamentally derived from Newton's laws of motion and the conservation of momentum. Before we derive the ideal rocket equation ourselves, let's revisit Newton's Laws of Motion.
+The first gunpowder-powered rockets were invented centuries ago, and since then rocket propulsion technology has evolved to the point where we now use electric propulsion to drive our space probes to the edge of our solar system. The ideal rocket equation and Newton's Laws of Motion, among other things (aerodynamics, etc.), dictate the performance of a rocket. The ideal rocket equation or the Tsiolkovsky rocket equation is fundamentally derived from Newton's laws of motion and the conservation of momentum. Before we derive the ideal rocket equation ourselves, let's revisit Newton's Laws of Motion and the law of conservation of momentum.
 
 - **Newton’s 1st Law:** An object at rest will stay at rest, or an object in motion will stay in motion unless acted upon by an external force.
 
 - **Newton’s 2nd Law:** The vector sum of the forces $$ \vec{\boldsymbol{F}} $$  acting on an object is equal to the mass $$ \boldsymbol{m} $$ of the object multiplied by its acceleration vector $$ \vec{\boldsymbol{a}} $$.
 
 - **Newton’s 3rd Law:** For every action there is an equal and opposite reaction.
+
+Momentum is the quantity of motion of a moving body, measured as a product of its mass and velocity. The Conservation of momentum is a general law of physics according to which the quantity called momentum that characterizes motion never changes in an isolated collection of objects; that is, the total momentum of a system remains constant. Momentum is a vector, involving both the direction and the magnitude of motion so the momenta of objects going in opposite directions can cancel to yield an overall sum of zero.
+
+Before launch, the total momentum of a rocket and its fuel is zero. During launch, the downward momentum of the expanding exhaust gases just equals in magnitude the upward momentum of the rising rocket, so that the total momentum of the system remains constant—in this case, at zero value.
 
 The essence of engines that we use, whether flying through the atmosphere or flying through space, is we carry a certain amount of material inside the spacecraft and we push that material out at a certain speed, and that makes us go forward. The fluid that we push to move forward is called the **working fluid** of the engine, and the speed at which we push out material is known as exit velocity or exhaust velocity. Rockets have a limited size. We can only load a certain amount of propellant on board the rocket. So there's a real question of how much performance can we get out of a given amount of propellant. 
 
@@ -35,9 +39,9 @@ $$ \mathbf{\dot{m}} = \frac{\mathbf{dm}}{\mathbf{dt}} $$
 
 Once the rocket has expended it's propellant, the final mass of the rocket is equal to the initial mass of the rocket minus the mass of the propellant.
 
-$$ \mathbf{m}_{\mathbf{f}} \ = \ \mathbf{m}_{\mathbf{PL}} \ + \ \mathbf{m}_{\mathbf{struct}} $$
-
 $$ \mathbf{m}_{\mathbf{f}} \ = \ \mathbf{m}_{\mathbf{i}} \ - \ \mathbf{m}_{\mathbf{prop}} $$
+
+$$ \mathbf{m}_{\mathbf{f}} \ = \ \mathbf{m}_{\mathbf{PL}} \ + \ \mathbf{m}_{\mathbf{struct}} $$
 
 Now, we can derive the ideal rocket equation.
 
@@ -73,7 +77,7 @@ When we change the rocket equation from the logarithmic form to an exponential f
 
 $$ \mathbf{\frac{m_{i}}{m_{f}}=e^{\frac{\Delta V}{V_{e}}}} $$
 
-The performance of our rocket engine depends on the mass flow rate at the exhaust and the exhaust velocity. But what fraction of the rocket's total mass (**propellant fraction**) has to be propellant in order to get us the velocity we need?
+The performance of our rocket engine depends on the mass flow rate at the exhaust and the exhaust velocity. But what fraction of the rocket's total mass (**propellant fraction**) has to be propellant in order to get us the velocity ($$ \mathbf{\Delta V} $$) we need?
 
 $$ \mathbf{m}_{\mathbf{prop}} \ = \ \mathbf{m}_{\mathbf{i}} \ - \ \mathbf{m}_{\mathbf{f}} $$
 
