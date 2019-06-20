@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "The Ideal Rocket Equation"
-date:   2019-06-19 10:27:55 +0800
+title: "The Ideal Rocket Equation"
+date: 2019-06-19 10:27:55 +0800
 categories: Space Exploration
 mathjax: true
 ---
