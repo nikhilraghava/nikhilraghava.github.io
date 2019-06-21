@@ -67,8 +67,9 @@ It is considered to be marginally possible to launch a single-stage-to-orbit che
 
 Notable single stage to orbit research spacecraft include Skylon, the DC-X, the Lockheed Martin X-33, and the Roton SSTO. However, despite showing some promise, none of them has come close to achieving orbit yet due to problems with finding the most efficient propulsion system.
 
-SSTO is much easier to achieve on extraterrestrial bodies which have weaker gravitational fields and lower atmospheric pressure than Earth, such as the Moon and Mars, and has been achieved from the Moon by both the Apollo program's Lunar Module and several robotic spacecraft of the Soviet Luna program. The video below shows a simulation of the Skylon spaceplane.
+SSTO is much easier to achieve on extraterrestrial bodies which have weaker gravitational fields and lower atmospheric pressure than Earth, such as the Moon and Mars, and has been achieved from the Moon by both the Apollo program's Lunar Module and several robotic spacecraft of the Soviet Luna program. 
 
-<style>.embed-container { position: relative; margin-bottom: 15px; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/mOqInOe5g8k' frameborder='0' allowfullscreen></iframe></div>
+![Skylon]({{site.baseurl}}/assets/img/skylon.png)
+*The Skylon vehicle is intended to be an aircraft designed to reach orbit.*
 
 SSTO is practically impossible even with our most advanced liquid rocket propulsion systems. So how does Skylon plan to achieve SSTO? Skylon is hydrogen-oxygen propelled. In this propellant system, the oxygen weighs 8 times as much as the hydrogen (with a chemically balanced mix). By breathing air for the first part of the ascent, it can gain significant velocity and height before it switches to liquid oxygen from the tank. This is how Skylon makes the single stage to orbit concept theoretically possible.
