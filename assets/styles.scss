@@ -43,10 +43,31 @@ a {
 }
 
 img {
-  max-width: 100%; 
+  max-width: 100%;
+  margin: auto;
   display: block; 
   height: auto;
   border-radius: 8px;
+}
+
+// Full width image
+img[alt="Atlas"] { 
+  width: 100%; 
+}
+
+img[alt="Apollo 8 Max-q"] { 
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+
+video {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.circle {
+  display: inline !important;
 }
 
 .section-head {
