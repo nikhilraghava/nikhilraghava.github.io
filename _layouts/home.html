@@ -1,23 +1,17 @@
 {% include header.html %}
 
 {% if site.layout == 'stacked' %}
-  <div class="container-lg py-6 p-responsive text-center">
+  <div class="container-lg p-responsive text-center">
     {% include masthead.html metadata=true %}
 
-    <div class="my-6">
+    <div class="my-6-nobottom">
       {% include projects.html %}
     </div>
 
-    {% if site.topics %}
-      <div class="my-6">
-        {% include interests.html %}
-      </div>
-    {% endif %}
-
     {% unless posts_total == 0 %}
-      <div class="my-6">
-        {% include thoughts.html %}
-      </div>
+      
+      {% include thoughts.html %}
+      
     {% endunless %}
   </div>
 {% else %}
