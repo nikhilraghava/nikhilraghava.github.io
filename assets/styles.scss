@@ -64,6 +64,13 @@ img[alt="Atlas"] {
   width: 100%; 
 }
 
+/* Large screen */
+@media only screen  and (min-width : 1024px) {
+  img[alt="Kepler's Second Law"] { 
+    width: 55%; 
+  }
+}
+
 img[alt="Apollo 8 Max-q"] { 
   margin-top: 20px;
   margin-bottom: 20px; 
@@ -317,8 +324,8 @@ table tr th :last-child, table tr td :last-child {
   }
 }
 
-.MathJax { 
-  font-size: 2em !important; 
+.MathJax_CHTML { 
+  font-size: 15pt !important; 
 }
 
 // Navbar
