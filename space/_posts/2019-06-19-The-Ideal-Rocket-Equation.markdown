@@ -13,7 +13,7 @@ The first gunpowder-powered rockets were invented centuries ago, and since then 
 
 - **Newton’s 1st Law:** An object at rest will stay at rest, or an object in motion will stay in motion unless acted upon by an external force.
 
-- **Newton’s 2nd Law:** The vector sum of the forces $$ \vec{\boldsymbol{F}} $$  acting on an object is equal to the mass $$ \boldsymbol{m} $$ of the object multiplied by its acceleration vector $$ \vec{\boldsymbol{a}} $$.
+- **Newton’s 2nd Law:** The vector sum of the forces $$ \vec{F} $$  acting on an object is equal to the mass $$ m $$ of the object multiplied by its acceleration vector $$ \vec{a} $$.
 
 - **Newton’s 3rd Law:** For every action there is an equal and opposite reaction.
 
@@ -25,112 +25,112 @@ The essence of engines that we use, whether flying through the atmosphere or fly
 
 ## Deriving The Ideal Rocket Equation
 
-For simplicity, assuming we're in free space (where we don't have to worry about atmospheric drag and gravity), there's no force acting on the rocket except the force of the rocket engine itself. The initial mass of a rocket ($$ \mathbf{m}_{\mathbf{i}} $$) is equal to the sum of the mass of the payload ($$ \mathbf{m}_{\mathbf{PL}} $$), the mass of the structure ($$ \mathbf{m}_{\mathbf{struct}} $$) and the mass of the propellant ($$ \mathbf{m}_{\mathbf{prop}} $$).
+For simplicity, assuming we're in free space (where we don't have to worry about atmospheric drag and gravity), there's no force acting on the rocket except the force of the rocket engine itself. The initial mass of a rocket ($$ \mathrm{m}_{\mathrm{i}} $$) is equal to the sum of the mass of the payload ($$ \mathrm{m}_{\mathrm{PL}} $$), the mass of the structure ($$ \mathrm{m}_{\mathrm{struct}} $$) and the mass of the propellant ($$ \mathrm{m}_{\mathrm{prop}} $$).
 
-$$ \mathbf{m}_{\mathbf{i}} \ = \ \mathbf{m}_{\mathbf{PL}} \ + \ \mathbf{m}_{\mathbf{struct}} \ + \ \mathbf{m}_{\mathbf{ prop }} $$
+$$ \mathrm{m}_{\mathrm{i}} \ = \ \mathrm{m}_{\mathrm{PL}} \ + \ \mathrm{m}_{\mathrm{struct}} \ + \ \mathrm{m}_{\mathrm{ prop }} $$
 
-To calculate the thrust of the engine, we multiply the mass flow rate at the exhaust ($$ \mathbf{\dot{m}} $$), and the velocity at the exit or the exhaust velocity ($$ \mathbf{V}_{\mathbf{e}} $$). By conservation of momentum, we'll get the forward motion of the rocket.
+To calculate the thrust of the engine, we multiply the mass flow rate at the exhaust ($$ \mathrm{\dot{m}} $$), and the velocity at the exit or the exhaust velocity ($$ \mathrm{V}_{\mathrm{e}} $$). By conservation of momentum, we'll get the forward motion of the rocket.
 
-$$ \mathbf{F} = \mathbf{\dot{m}} \mathbf{V}_{\mathbf{e}} $$
+$$ \mathrm{F} = \mathrm{\dot{m}} \mathrm{V}_{\mathrm{e}} $$
 
-Where the mass flow rate ($$ \mathbf{\dot{m}} $$), is a time derivative of mass:
+Where the mass flow rate ($$ \mathrm{\dot{m}} $$), is a time derivative of mass:
 
-$$ \mathbf{\dot{m}} = \frac{\mathbf{dm}}{\mathbf{dt}} $$
+$$ \mathrm{\dot{m}} = \frac{\mathrm{dm}}{\mathrm{dt}} $$
 
 Once the rocket has expended it's propellant, the final mass of the rocket is equal to the initial mass of the rocket minus the mass of the propellant.
 
-$$ \mathbf{m}_{\mathbf{f}} \ = \ \mathbf{m}_{\mathbf{i}} \ - \ \mathbf{m}_{\mathbf{prop}} $$
+$$ \mathrm{m}_{\mathrm{f}} \ = \ \mathrm{m}_{\mathrm{i}} \ - \ \mathrm{m}_{\mathrm{prop}} $$
 
-$$ \mathbf{m}_{\mathbf{f}} \ = \ \mathbf{m}_{\mathbf{PL}} \ + \ \mathbf{m}_{\mathbf{struct}} $$
+$$ \mathrm{m}_{\mathrm{f}} \ = \ \mathrm{m}_{\mathrm{PL}} \ + \ \mathrm{m}_{\mathrm{struct}} $$
 
 Now, we can derive the ideal rocket equation.
 
-$$ \mathbf{F} = \mathbf{-V}_{\mathbf{e}} \frac{\mathbf{dm}}{\mathbf{dt}} $$ 
+$$ \mathrm{F} = \mathrm{-V}_{\mathrm{e}} \frac{\mathrm{dm}}{\mathrm{dt}} $$ 
 
-Note: $$ \mathbf{V}_{\mathbf{e}} $$ is negative relative to the the rocket's motion. By conservation of momentum:
+Note: $$ \mathrm{V}_{\mathrm{e}} $$ is negative relative to the the rocket's motion. By conservation of momentum:
 
-$$ \mathbf{F \ = \ ma \ = \ m \frac{dV}{d t} \ = \ -V_{e} \frac{dm}{dt}} $$
+$$ \mathrm{F \ = \ ma \ = \ m \frac{dV}{d t} \ = \ -V_{e} \frac{dm}{dt}} $$
 
-$$ \mathbf{m \frac{dV}{dt} \ = \ -V_{e} \frac{dm}{dt}} $$
+$$ \mathrm{m \frac{dV}{dt} \ = \ -V_{e} \frac{dm}{dt}} $$
 
-$$ \mathbf{m \ dV = -V_{e} \ dm} $$ 
+$$ \mathrm{m \ dV = -V_{e} \ dm} $$ 
 
-$$ \mathbf{dV=-V_{e} \frac{d m}{m}} $$
+$$ \mathrm{dV=-V_{e} \frac{d m}{m}} $$
 
-$$ \int_{\mathbf{V}_{\mathbf{i}}}^{\mathbf{V}_{\mathbf{f}}} \mathbf{dV}=-\mathbf{V}_{\mathbf{e}} \int_{\mathbf{m}_{\mathbf{i}}}^{\mathbf{m}_{\mathbf{f}}} \frac{\mathbf{dm}}{\mathbf{m}} $$
+$$ \int_{\mathrm{V}_{\mathrm{i}}}^{\mathrm{V}_{\mathrm{f}}} \mathrm{dV}=-\mathrm{V}_{\mathrm{e}} \int_{\mathrm{m}_{\mathrm{i}}}^{\mathrm{m}_{\mathrm{f}}} \frac{\mathrm{dm}}{\mathrm{m}} $$
 
-$$ \mathbf{\underbrace{V_{\mathbf{f}}-\mathbf{V}_{\mathbf{i}}}_{\Delta \mathbf{V}} \ = \ -\mathbf{V}_{\mathbf{e}} \ln\frac{\mathbf{m}_{\mathbf{f}}}{\mathbf{m}_{\mathbf{i}}} \ = \ \mathbf{V}_{\mathbf{e}} \ln \frac{\mathbf{m}_{\mathbf{i}}}{\mathbf{m}_{\mathbf{f}}}} $$
+$$ \mathrm{\underbrace{V_{\mathrm{f}}-\mathrm{V}_{\mathrm{i}}}_{\Delta \mathrm{V}} \ = \ -\mathrm{V}_{\mathrm{e}} \ln\frac{\mathrm{m}_{\mathrm{f}}}{\mathrm{m}_{\mathrm{i}}} \ = \ \mathrm{V}_{\mathrm{e}} \ln \frac{\mathrm{m}_{\mathrm{i}}}{\mathrm{m}_{\mathrm{f}}}} $$
 
 Final equation:
 
-$$ \mathbf{\Delta V=V_{e} \ln \frac{m_{i}}{m_{f}}} $$
+$$ \mathrm{\Delta V=V_{e} \ln \frac{m_{i}}{m_{f}}} $$
 
 Exponential form:
 
-$$ \mathbf{\frac{\Delta V}{V_{e}}=\ln \frac{m_{i}}{m_{f}}} $$
+$$ \mathrm{\frac{\Delta V}{V_{e}}=\ln \frac{m_{i}}{m_{f}}} $$
 
-$$ \mathbf{\frac{m_{i}}{m_{f}}=e^{\frac{\Delta V}{V_{e}}}} $$
+$$ \mathrm{\frac{m_{i}}{m_{f}}=e^{\frac{\Delta V}{V_{e}}}} $$
 
 ## Implications of the Ideal Rocket Equation
 
 When we change the rocket equation from the logarithmic form to an exponential form, we see that the ratio of the initial to the final mass of the rocket is the exponential of the change in velocity, which we get from burning the propellant, divided by the exhaust velocity.
 
-$$ \mathbf{\frac{m_{i}}{m_{f}}=e^{\frac{\Delta V}{V_{e}}}} $$
+$$ \mathrm{\frac{m_{i}}{m_{f}}=e^{\frac{\Delta V}{V_{e}}}} $$
 
-The performance of our rocket engine depends on the mass flow rate at the exhaust and the exhaust velocity. But what fraction of the rocket's total mass (**propellant fraction**) has to be propellant in order to get us the velocity ($$ \mathbf{\Delta V} $$) we need?
+The performance of our rocket engine depends on the mass flow rate at the exhaust and the exhaust velocity. But what fraction of the rocket's total mass (**propellant fraction**) has to be propellant in order to get us the velocity ($$ \mathrm{\Delta V} $$) we need?
 
-$$ \mathbf{m}_{\mathbf{prop}} \ = \ \mathbf{m}_{\mathbf{i}} \ - \ \mathbf{m}_{\mathbf{f}} $$
+$$ \mathrm{m}_{\mathrm{prop}} \ = \ \mathrm{m}_{\mathrm{i}} \ - \ \mathrm{m}_{\mathrm{f}} $$
 
-$$ \mathbf{\frac{m_{i}}{m_{f}}=e^{\frac{\Delta V}{V_{e}}}} $$
+$$ \mathrm{\frac{m_{i}}{m_{f}}=e^{\frac{\Delta V}{V_{e}}}} $$
 
-$$ \mathbf{\frac{m_{f}}{m_{i}}=e^{-\frac{\Delta V}{V_{e}}}} $$
+$$ \mathrm{\frac{m_{f}}{m_{i}}=e^{-\frac{\Delta V}{V_{e}}}} $$
 
-$$ \mathbf{m_{f}=m_{i} e^{-\frac{\Delta V}{V_{e}}}} $$
+$$ \mathrm{m_{f}=m_{i} e^{-\frac{\Delta V}{V_{e}}}} $$
 
 $$ \begin{split}
-\therefore \mathbf{m_{prop}} \ & \mathbf{=} \ \mathbf{m_{i}} \mathbf{-} \mathbf{m_{f}} \\ & \mathbf{=}  \ \mathbf{m_{i}-m_{i} e^{-\frac{\Delta V}{V_{e}}}} \\
-& \mathbf{=} \ \mathbf{m_{i}}\left[\mathbf{1-e^{-\frac{\Delta V}{V_{e}}}}\right]
+\therefore \mathrm{m_{prop}} \ & \mathrm{=} \ \mathrm{m_{i}} \mathrm{-} \mathrm{m_{f}} \\ & \mathrm{=}  \ \mathrm{m_{i}-m_{i} e^{-\frac{\Delta V}{V_{e}}}} \\
+& \mathrm{=} \ \mathrm{m_{i}}\left[\mathrm{1-e^{-\frac{\Delta V}{V_{e}}}}\right]
 \end{split}$$
 
 Propellant Fraction:
 
-$$ \mathbf{\frac{m_{prop}}{m_{i}}=1-e^{-\frac{\Delta v}{V_{e}}}} $$
+$$ \mathrm{\frac{m_{prop}}{m_{i}}=1-e^{-\frac{\Delta V}{V_{e}}}} $$
 
 Inert Fraction:
 
-$$ \mathbf{\frac{m_{f}}{m_{i}}=e^{-\frac{ \Delta V}{V_{e}}}} $$
+$$ \mathrm{\frac{m_{f}}{m_{i}}=e^{-\frac{ \Delta V}{V_{e}}}} $$
 
-Exhaust velocity is critical for performance, and chemical rockets (solid and liquid) have an exhaust velocity of about 2000 - 4500 m/s. Propulsion engineers like to talk about **specific impulse** ($$ \mathbf{I_{sp}} $$); it's a measure of how effectively a rocket uses propellant, or a jet engine uses fuel.
+Exhaust velocity is critical for performance, and chemical rockets (solid and liquid) have an exhaust velocity of about 2000 - 4500 m/s. Propulsion engineers like to talk about **specific impulse** ($$ \mathrm{I_{sp}} $$); it's a measure of how effectively a rocket uses propellant, or a jet engine uses fuel.
 
 By definition, specific impulse is the total impulse (or change in momentum) delivered per unit of propellant consumed and is dimensionally equivalent to the generated thrust divided by the propellant mass flow rate or weight flow rate. If mass (kilogram, pound-mass, or slug) is used as the unit of propellant, then specific impulse has units of velocity. If weight (Newton or pound-force) is used instead, then specific impulse has units of time (seconds).
 
-Multiplying flow rate by the standard gravity ($$ \mathbf{g_{0}} $$) converts specific impulse from the mass basis to the weight basis. We can calculate the specific impulse of a rocket engine given the exhaust velocity and the acceleration of gravity at Earth.
+Multiplying flow rate by the standard gravity ($$ \mathrm{g_{0}} $$) converts specific impulse from the mass basis to the weight basis. We can calculate the specific impulse of a rocket engine given the exhaust velocity and the acceleration of gravity at Earth.
 
-$$ \mathbf{I_{sp}=\frac{V_{e}}{g_{0}}} $$
+$$ \mathrm{I_{sp}=\frac{V_{e}}{g_{0}}} $$
 
 Chemical rockets have a specific impulse of about 200 - 450 seconds.
 
 ### Effect of exhaust velocity on achieving Earth orbit
 
-To get into Low Earth Orbit (LEO): $$ \mathbf{\Delta V} $$  is about 9000 m/s (includes drag and gravity losses; ignores effect of Earth’s rotation).
+To get into Low Earth Orbit (LEO): $$ \mathrm{\Delta V} $$  is about 9000 m/s (includes drag and gravity losses; ignores effect of Earth’s rotation).
 
-Using a solid rocket motor, $$ \mathbf{V}_{\mathbf{e}} $$ is about 2000 m/s; $$ \mathbf{\frac{\Delta V}{V_{e}} \approx 4.5} $$. Thus, the rocket's inert fraction will be:
+Using a solid rocket motor, $$ \mathrm{V}_{\mathrm{e}} $$ is about 2000 m/s; $$ \mathrm{\frac{\Delta V}{V_{e}} \approx 4.5} $$. Thus, the rocket's inert fraction will be:
 
-$$ \mathbf{\frac{m_{f}}{m_{i}}=e^{-4.5}=0.011} $$
+$$ \mathrm{\frac{m_{f}}{m_{i}}=e^{-4.5}=0.011} $$
 
 The rocket's propellant fraction will be:
 
-$$ \mathbf{\frac{m_{prop}}{m_{i}}=1-e^{-4.5}=0.99} $$
+$$ \mathrm{\frac{m_{prop}}{m_{i}}=1-e^{-4.5}=0.99} $$
 
-Now, if we were to use a high-performance liquid rocket engine with an exhaust velocity ($$ \mathbf{V}_{\mathbf{e}} $$) of about 4000 m/s; $$ \mathbf{\frac{\Delta V}{V_{e}} \approx 2.25} $$. How does this affect the amount propellant and payload we can carry?
+Now, if we were to use a high-performance liquid rocket engine with an exhaust velocity ($$ \mathrm{V}_{\mathrm{e}} $$) of about 4000 m/s; $$ \mathrm{\frac{\Delta V}{V_{e}} \approx 2.25} $$. How does this affect the amount propellant and payload we can carry?
 
 The rocket's inert fraction will be:
 
-$$ \mathbf{\frac{m_{f}}{m_{i}}=e^{-2.25}=0.105} $$
+$$ \mathrm{\frac{m_{f}}{m_{i}}=e^{-2.25}=0.105} $$
 
 The rocket's propellant fraction will be:
 
-$$ \mathbf{\frac{m_{prop}}{m_{i}}=1-e^{-2.25}=0.89} $$
+$$ \mathrm{\frac{m_{prop}}{m_{i}}=1-e^{-2.25}=0.89} $$
 
 Therefore, the higher the exhaust velocity, the lower the propellant fraction and higher the inert fraction. With a higher inert fraction, we are able to carry a heavier payload into orbit and keep the rocket structurally sound. This is why companies like SpaceX are constantly improving the performance of their rocket engines in order to carry heavier payloads to Low-Earth Orbit, the Moon and eventually to Mars.
 

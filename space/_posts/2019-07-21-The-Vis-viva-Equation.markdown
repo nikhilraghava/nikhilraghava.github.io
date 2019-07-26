@@ -25,77 +25,75 @@ Vis viva (Latin for "living force") is a historical term used for the first (kno
 
 ## Calculation
 
-For a small body orbiting another much larger body, such as a satellite orbiting Earth, the total energy of the smaller body, $$ \boldsymbol{E_{Total}} $$, is the sum of its kinetic energy, $$ \boldsymbol{E_{KE}} $$, and potential energy, $$ \boldsymbol{E_{PE}} $$.
+For a small body orbiting another much larger body, such as a satellite orbiting Earth, the total energy of the smaller body, $$ E_{Total} $$, is the sum of its kinetic energy, $$ E_{KE} $$, and potential energy, $$ E_{PE} $$.
 
-$$ \boldsymbol{E_{Total}=E_{KE}+E_{PE}} $$
+$$ E_{Total}=E_{KE}+E_{PE} $$
 
-$$ \boldsymbol{E_{KE}=\frac{1}{2} m v^{2}} $$
+$$ E_{KE}=\frac{1}{2} m v^{2} $$
 
-$$ \boldsymbol{E_{PE}=-\frac{G M m}{r}} $$
+$$ E_{PE}=-\frac{G M m}{r} $$
 
-Where $$ \boldsymbol{M} $$ is the mass of the larger body (e.g. Earth, Mars, etc.) and $$ \boldsymbol{m} $$ is the mass of the spacecraft.
+Where $$ M $$ is the mass of the larger body (e.g. Earth, Mars, etc.) and $$ m $$ is the mass of the spacecraft.
 
-$$ \boldsymbol{E_{Total}=\frac{1}{2} m v^{2}-\frac{G M m}{r}} $$
+$$ E_{Total}=\frac{1}{2} m v^{2}-\frac{G M m}{r} $$
 
-$$ \boldsymbol{\frac{E_{Total}}{m}=\frac{v^{2}}{2}-\frac{GM}{r}} $$
+$$ \frac{E_{Total}}{m}=\frac{v^{2}}{2}-\frac{GM}{r} $$
 
 Specific total energy is constant throughout the orbit. Specific energy is energy per unit mass.
 
-$$ \boldsymbol{\varepsilon=\frac{E_{Total}}{m}} $$
+$$ \varepsilon=\frac{E_{Total}}{m} $$
 
-$$ \boldsymbol{\varepsilon=\frac{v^{2}}{2}-\frac{GM}{r}} $$
+$$ \varepsilon=\frac{v^{2}}{2}-\frac{GM}{r} $$
 
-$$ \boldsymbol{\varepsilon_{1}=\varepsilon_{2}} $$
+$$ \varepsilon_{1}=\varepsilon_{2} $$
 
-$$ \boldsymbol{\varepsilon_{1}=\varepsilon_{2}} $$ because specific total energy at any one point in the orbit is always equal to any other point in the same orbit.
+$$ \varepsilon_{1}=\varepsilon_{2} $$ because specific total energy at any one point in the orbit is always equal to any other point in the same orbit.
 
-$$ \boldsymbol{\frac{v_{1}^{2}}{2}-\frac{GM}{r_{1}}=\frac{v_{2}^{2}}{2}-\frac{GM}{r_{2}}} $$
+$$ \frac{v_{1}^{2}}{2}-\frac{GM}{r_{1}}=\frac{v_{2}^{2}}{2}-\frac{GM}{r_{2}} $$
 
-$$ \boldsymbol{\frac{v_{1}^{2}}{2}-\frac{v_{2}^{2}}{2}=\frac{G M}{r_{1}}-\frac{G M}{r_{2}}} $$
+$$ \frac{v_{1}^{2}}{2}-\frac{v_{2}^{2}}{2}=\frac{G M}{r_{1}}-\frac{G M}{r_{2}} $$
 
-Using the standard gravitational parameter, $$ \boldsymbol{\mu=GM} $$:
+Using the standard gravitational parameter, $$ \mu=GM $$:
 
-$$ \boldsymbol{\frac{v_{1}^{2}}{2}-\frac{v_{2}^{2}}{2}=\frac{\mu}{r_{1}}-\frac{\mu}{r_{2}}} $$
+$$ \frac{v_{1}^{2}}{2}-\frac{v_{2}^{2}}{2}=\frac{\mu}{r_{1}}-\frac{\mu}{r_{2}} $$
 
-$$ \boldsymbol{\frac{v_{1}^{2}}{2}-\frac{v_{2}^{2}}{2}=\mu\left(\frac{1}{r_{1}}-\frac{1}{r_{2}}\right)} $$
+$$ \frac{v_{1}^{2}}{2}-\frac{v_{2}^{2}}{2}=\mu\left(\frac{1}{r_{1}}-\frac{1}{r_{2}}\right) $$
 
 Kepler's second law of planetary motion states that a line between the central body and the spacecraft sweeps equal areas in equal times. The speed of the spacecraft increases as it nears the central body and decreases as it recedes from it.
 
-![Kepler's Second Law]({{site.baseurl}}/assets/img/keplersecondlaw.jpeg)
+$$ \frac{1}{2} r_{1} v_{1} \Delta t=\frac{1}{2} r_{2} v_{2} \Delta t $$
 
-$$ \boldsymbol{\frac{1}{2} r_{1} v_{1} \Delta t=\frac{1}{2} r_{2} v_{2} \Delta t} $$
+$$ r_{1} v_{1}=r_{2} v_{2} $$
 
-$$ \boldsymbol{r_{1} v_{1}=r_{2} v_{2}} $$
+$$ v_{2}=\frac{r_{1} v_{1}}{r_{2}} $$
 
-$$ \boldsymbol{v_{2}=\frac{r_{1} v_{1}}{r_{2}}} $$
+$$ \frac{v_{1}^{2}}{2}-\frac{r_{1}^{2} v_{1}^{2}}{2 r_{2}^{2}}=\mu\left(\frac{1}{r_{1}}-\frac{1}{r_{2}}\right) $$
 
-$$ \boldsymbol{\frac{v_{1}^{2}}{2}-\frac{r_{1}^{2} v_{1}^{2}}{2 r_{2}^{2}}=\mu\left(\frac{1}{r_{1}}-\frac{1}{r_{2}}\right)} $$
+$$ v_{1}^{2}\left(\frac{r_{2}^{2}-r_{1}^{2}}{2 r_{2}^{2}}\right)=\mu\left(\frac{r_{2}-r_{1}}{r_{1} r_{2}}\right) $$
 
-$$ \boldsymbol{v_{1}^{2}\left(\frac{r_{2}^{2}-r_{1}^{2}}{2 r_{2}^{2}}\right)=\mu\left(\frac{r_{2}-r_{1}}{r_{1} r_{2}}\right)} $$
+$$ v_{1}^{2}=\mu\left(\frac{r_{2}-r_{1}}{r_{1} r_{2}}\right)\left(\frac{2 r_{2}^{2}}{r_{2}^{2}-r_{1}^{2}}\right) $$
 
-$$ \boldsymbol{v_{1}^{2}=\mu\left(\frac{r_{2}-r_{1}}{r_{1} r_{2}}\right)\left(\frac{2 r_{2}^{2}}{r_{2}^{2}-r_{1}^{2}}\right)} $$
+$$ v_{1}^{2}=\mu\left(\frac{r_{2}-r_{1}}{r_{1} r_{2}}\right)\left(\frac{2 r_{2}^{2}}{\left(r_{2}-r_{1}\right)\left(r_{2}+r_{1}\right)}\right) $$
 
-$$ \boldsymbol{v_{1}^{2}=\mu\left(\frac{r_{2}-r_{1}}{r_{1} r_{2}}\right)\left(\frac{2 r_{2}^{2}}{\left(r_{2}-r_{1}\right)\left(r_{2}+r_{1}\right)}\right)} $$
+$$ v_{1}^2=\mu\left(\frac{1}{r_{1}}\right)\left(\frac{2 r_{2}}{r_{1}+r_{2}}\right) $$
 
-$$ \boldsymbol{v_{1}^2=\mu\left(\frac{1}{r_{1}}\right)\left(\frac{2 r_{2}}{r_{1}+r_{2}}\right)} $$
-
-$$ \boldsymbol{v_{1}^2=\frac{2 \mu r_{2}}{r_{1}\left(r_{1}+r_{2}\right)}} $$
+$$ v_{1}^2=\frac{2 \mu r_{2}}{r_{1}\left(r_{1}+r_{2}\right)} $$
 
 Therefore, the desired velocity for Hohmann transfer (expected final velocity after posigrade burn at the periapsis) is:
 
-$$ \boldsymbol{v_{1}=\sqrt{\frac{2 \mu r_{2}}{r_{1}\left(r_{1}+r_{2}\right)}}} $$
+$$ v_{1}=\sqrt{\frac{2 \mu r_{2}}{r_{1}\left(r_{1}+r_{2}\right)}} $$
 
-The $$ \boldsymbol{\Delta v} $$ required for Hohmann transfer is $$ \boldsymbol{\Delta v=v_{1}-v_{c}} $$, where $$ \boldsymbol{v_c} $$ is the current circular orbital velocity.
+The $$ \mathrm{\Delta v} $$ required for Hohmann transfer is $$ \mathrm{\Delta v}=v_{1}-v_{c} $$, where $$ v_c $$ is the current circular orbital velocity.
 
-$$ \boldsymbol{v_{c}=\sqrt{\frac{GM}{r}}=\sqrt{\frac{\mu}{r}}} $$
+$$ v_{c}=\sqrt{\frac{GM}{r}}=\sqrt{\frac{\mu}{r}} $$
 
-The $$ \boldsymbol{\Delta v} $$ required for the first Hohmann transfer burn at the periapsis is:
+The $$ \mathrm{\Delta v} $$ required for the first Hohmann transfer burn at the periapsis is:
 
-$$ \boldsymbol{\Delta v=\sqrt{\frac{\mu}{r_{1}}}\left(\sqrt{\frac{2 r_2}{r_{1}+r_{2}}}-1\right)} $$
+$$ \mathrm{\Delta v}=\sqrt{\frac{\mu}{r_{1}}}\left(\sqrt{\frac{2 r_2}{r_{1}+r_{2}}}-1\right) $$
 
-The $$ \boldsymbol{\Delta v} $$ required for the circularisation of the orbit is $$ \boldsymbol{\Delta v=v_{c}-v_{2}} $$, where $$ \boldsymbol{v_c}  $$ is the cicular orbital velocity at a distance $$ \boldsymbol{r_{2}} $$ from the central body.
+The $$ \mathrm{\Delta v} $$ required for the circularisation of the orbit is $$ \mathrm{\Delta v}=v_{c}-v_{2} $$, where $$ v_c $$ is the cicular orbital velocity at a distance $$ r_{2} $$ from the central body.
 
-$$ \boldsymbol{\Delta v = \sqrt{\frac{\mu}{r_{2}}}\left(1-\sqrt{\frac{2 r_{1}}{r_{1}+r_{2}}}\right)} $$
+$$ \mathrm{\Delta v} = \sqrt{\frac{\mu}{r_{2}}}\left(1-\sqrt{\frac{2 r_{1}}{r_{1}+r_{2}}}\right) $$
 
 ## Simulation
 
@@ -113,12 +111,12 @@ Before we perform the Hohmann transfer, we put Kerbal X in orbit around Kerbin w
 ![KSP]({{site.baseurl}}/assets/img/kspone.png)
 *Hohmann transfer in Kerbal Space Program.*
 
-Now, let's calculate the $$ \boldsymbol{\Delta v} $$ required to transfer to Mun's orbit, which is about 11,400,000 m from Kerbin's surface. The standard gravitation parameter, $$ \boldsymbol{\mu} $$, of Kerbin is about $$ \boldsymbol{3.53 \times 10^{12} \ \mathrm{m}^{3} /\mathrm{s}^{2}} $$ and the distance between the spacecraft and Kerbin's center (Kerbin's equatorial radius is 600,000 m) at the periapsis is about $$ \boldsymbol{1.83 \times 10^{6} \ \mathrm{m}} $$. This will be our $$ \boldsymbol{r_1} $$ distance. The distance between Mun's center and Kerbin's center is $$ \boldsymbol{12 \times 10^{6} \ \mathrm{m}} $$. This will be our $$ \boldsymbol{r_2} $$ distance. Plugging the values into the vis-viva equation:
+Now, let's calculate the $$ \mathrm{\Delta v} $$ required to transfer to Mun's orbit, which is about 11,400,000 m from Kerbin's surface. The standard gravitation parameter, $$ \mu $$, of Kerbin is about $$ 3.53 \times 10^{12} \ \mathrm{m}^{3} /\mathrm{s}^{2} $$ and the distance between the spacecraft and Kerbin's center (Kerbin's equatorial radius is 600,000 m) at the periapsis is about $$ 1.83 \times 10^{6} \ \mathrm{m} $$. This will be our $$ r_1 $$ distance. The distance between Mun's center and Kerbin's center is $$ 12 \times 10^{6} \ \mathrm{m} $$. This will be our $$ r_2 $$ distance. Plugging the values into the vis-viva equation:
 
-$$ \boldsymbol{\Delta v=\sqrt{\frac{\mu}{r_{1}}}\left(\sqrt{\frac{2 r_2}{r_{1}+r_{2}}}-1\right)} $$
+$$ \mathrm{\Delta v}=\sqrt{\frac{\mu}{r_{1}}}\left(\sqrt{\frac{2 r_2}{r_{1}+r_{2}}}-1\right) $$
 
-we get a $$ \boldsymbol{\Delta v = 441 \ \mathrm{m} /\mathrm{s}} $$ for the first Hohmann transfer burn at the periapsis, which is pretty close to the value Kerbal Space Program computed for us:  $$ \boldsymbol{\Delta v = 437.5 \ \mathrm{m} /\mathrm{s}} $$. Once the transfer is complete, we need to perform a circularisation burn at the apoapsis of the elliptical transfer orbit. Our spacecraft is about $$ \boldsymbol{11.45 \times 10^{6} \ \mathrm{m}} $$ from Kerbin's surface and our $$ \boldsymbol{r_1} $$ and $$ \boldsymbol{r_2} $$ distances remain the same for the circularisation burn. Plugging the values into the vis-viva equation:
+we get a $$ \mathrm{\Delta v} = 441 \ \mathrm{m} /\mathrm{s} $$ for the first Hohmann transfer burn at the periapsis, which is pretty close to the value Kerbal Space Program computed for us:  $$ \mathrm{\Delta v} = 437.5 \ \mathrm{m} /\mathrm{s} $$. Once the transfer is complete, we need to perform a circularisation burn at the apoapsis of the elliptical transfer orbit. Our spacecraft is about $$ 11.45 \times 10^{6} \ \mathrm{m} $$ from Kerbin's surface and our $$ r_1 $$ and $$ r_2 $$ distances remain the same for the circularisation burn. Plugging the values into the vis-viva equation:
 
-$$ \boldsymbol{\Delta v = \sqrt{\frac{\mu}{r_{2}}}\left(1-\sqrt{\frac{2 r_{1}}{r_{1}+r_{2}}}\right)} $$
+$$ \mathrm{\Delta v} = \sqrt{\frac{\mu}{r_{2}}}\left(1-\sqrt{\frac{2 r_{1}}{r_{1}+r_{2}}}\right) $$
 
-we get a $$ \boldsymbol{\Delta v = 263 \ \mathrm{m} /\mathrm{s}} $$ for the circularisation burn at the apoapsis of the transfer orbit, which is very close to the value Kerbal Space Program computed for us:  $$ \boldsymbol{\Delta v = 262.3 \ \mathrm{m} /\mathrm{s}} $$. The vis-viva equation works! 
+we get a $$ \mathrm{\Delta v} = 263 \ \mathrm{m} /\mathrm{s} $$ for the circularisation burn at the apoapsis of the transfer orbit, which is very close to the value Kerbal Space Program computed for us:  $$ \mathrm{\Delta v} = 262.3 \ \mathrm{m} /\mathrm{s} $$. The vis-viva equation works! 

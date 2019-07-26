@@ -17,15 +17,15 @@ Most rockets experience max q or maximum aerodynamic pressure about a minute int
   Your browser does not support the video tag.
 </video>
 
-The video above was taken during the launch of the Apollo 11 mission. You can hear the commentator announce: "we're through the [inaudible] maximum aerodynamic pressure now" about 2 minutes and 22 seconds into the launch. Dynamic pressure, $$ \boldsymbol{q} $$, is defined mathematically as: 
+The video above was taken during the launch of the Apollo 11 mission. You can hear the commentator announce: "we're through the [inaudible] maximum aerodynamic pressure now" about 2 minutes and 22 seconds into the launch. Dynamic pressure, $$ q $$, is defined mathematically as: 
 
-$$ \boldsymbol{q}=\boldsymbol{\frac{1}{2} \boldsymbol{\rho} v^{2}} $$
+$$ q =  \frac{1}{2} \rho v^{2} $$
 
-where $$ \boldsymbol{\rho} $$ is the local air density, and $$ \boldsymbol{v} $$ is the vehicle's velocity; the dynamic pressure can be thought of as the kinetic energy density of the air with respect to the vehicle. For a launch of a rocket from the ground into space, dynamic pressure is
+where $$ \rho $$ is the local air density, and $$ v $$ is the vehicle's velocity; the dynamic pressure can be thought of as the kinetic energy density of the air with respect to the vehicle. For a launch of a rocket from the ground into space, dynamic pressure is
 
-- Zero at lift-off, when the air density $$ \boldsymbol{\rho} $$ is high but the vehicle's speed $$ \boldsymbol{v = 0} $$.
+- Zero at lift-off, when the air density $$ \rho $$ is high but the vehicle's speed $$ v = 0 $$.
 
-- Zero outside the atmosphere, where the speed $$ \boldsymbol{v} $$ is high, but the air density $$ \boldsymbol{\rho = 0} $$.
+- Zero outside the atmosphere, where the speed $$ v $$ is high, but the air density $$ \rho = 0 $$.
 
 - Always non-negative, given the quantities involved.
 
@@ -41,16 +41,16 @@ This graph was taken from the Apollo 8 launch, it illustrates the changes in the
 
 The exhaust velocity of our rocket engine and the thrust to weight ratio (excess thrust) are two critical things we have to consider when we take off from a gravity field. We can calculate the initial acceleration of a rocket at liftoff given excess thrust and gross weight of the vehicle:
 
-$$ \boldsymbol{\text{Initial Acceleration}}  =  \boldsymbol{\frac{\text { Excess Thrust }}{\text { Gross Weight }}} $$
+$$ \text{Initial Acceleration}  =  \frac{\text { Excess Thrust }}{\text { Gross Weight }} $$
 
-The units for initial acceleration is $$ \boldsymbol{g} $$. The ratio between the excess thrust and the gross weight determines a rocket's initial acceleration. This ratio varies from rocket to rocket. We can use this ratio to explain why a Space Shuttle goes up so much faster than a Saturn V. 
+The units for initial acceleration is $$ g $$. The ratio between the excess thrust and the gross weight determines a rocket's initial acceleration. This ratio varies from rocket to rocket. We can use this ratio to explain why a Space Shuttle goes up so much faster than a Saturn V. 
 
 A Space Shuttle has a gross weight at liftoff of about 2.04M kg. A total thrust at liftoff of about 3.13M kg. Thus the Space Shuttle's engines are capable of producing about 1.09M kg of excess thrust at liftoff.
 
-$$ \boldsymbol{\text{Initial Acceleration}}  =  \boldsymbol{\frac{\text {1.09M kg}}{\text { 2.04M kg }}} = \boldsymbol{\text{0.53g}}$$
+$$ \text{Initial Acceleration}  = \frac{\text {1.09M kg}}{\text { 2.04M kg }} = \text{0.53g}$$
 
 The Saturn V on the other hand is much heavier and has a gross weight at liftoff of about 2.90M kg. A total thrust at liftoff of about 3.40M kg. Thus the Saturn V's engines are capable of producing about 0.5M kg of excess thrust at liftoff.
 
-$$ \boldsymbol{\text{Initial Acceleration}}  =  \boldsymbol{\frac{\text {0.5M kg}}{\text { 2.90M kg }}} = \boldsymbol{\text{0.17g}}$$
+$$ \text{Initial Acceleration}  =  \frac{\text {0.5M kg}}{\text { 2.90M kg }} = \text{0.17g}$$
 
 The Space Shuttle had a higher initial acceleration rate compared to the Saturn V rocket. This is why a Space Shuttle goes up so much faster than a Saturn V. 
