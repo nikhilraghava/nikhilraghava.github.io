@@ -29,7 +29,7 @@ Wireshark is a network analysis tool that captures packets in real-time and disp
 ![Wireshark]({{site.baseurl}}/assets/img/hack2.png)
 *I want to capture packets from the WiFi: en0 interface on my Mac.*
 
-I clicked the blue colored shark fin located on the upper left-hand corner of the menu to start capturing packets from the WiFi: en0 interface (I made sure I closed my browser, turned off my VPN and quit any running application before I started capturing packets). I captured packets from the `WiFi: en0` interface for about 30 seconds, this allowed Wireshark to do a more accurate analysis of the packets being sent and received by the interface.
+I clicked the blue colored shark fin located on the upper left-hand corner of the menu to start capturing packets from the `WiFi: en0` interface (I made sure I closed my browser, turned off my VPN and quit any running application before I started capturing packets). I captured packets from the `WiFi: en0` interface for about 30 seconds, this allowed Wireshark to do a more accurate analysis of the packets being sent and received by the interface.
 
 ![Wireshark]({{site.baseurl}}/assets/img/hack3.png)
 *The app performs two different GET requests that we're interested in.*
@@ -44,7 +44,7 @@ The Unicode version of M3U is M3U8, which uses UTF-8-encoded characters. M3U8 fi
 
 The app `GET`s a `.m3u8` file, the Unicode version of M3U commonly used to point media players to audio and video sources, including online sources to live stream the broadcast. The app then `GET`s a `.ts` file, a standard digital container format encapsulating packetized elementary streams, with error correction and synchronization pattern features for maintaining transmission integrity when the communication channel carrying the stream is degraded.
 
-We need to find out the URL from which the file is retrieved to `GET` the `.m3u8` via the browser. Thankfully, Wireshark has already captured and analysed the packet for us and we can retrieve the URL easily.
+We need to find out the URL from which the `.m3u8` file is retrieved to `GET` the `.m3u8` via the browser. Thankfully, Wireshark has already captured and analysed the packet for us and we can retrieve the URL easily.
 
 ![Wireshark]({{site.baseurl}}/assets/img/hack4.png)
 *The full request URL from which we can stream the live broadcast.*
@@ -121,6 +121,6 @@ iomart is a Scottish information technology and cloud computing company speciali
 ![Wireshark]({{site.baseurl}}/assets/img/hack6.png)
 *RapidSwitch's data center located in Spectrum House, United Kingdom.* 
 
-RapidSwitch Ltd. is a server hosting company, provides servers, managed servers solutions, collocation services, and virtual servers in the United Kingdom. It also provides IP transit and other connectivity services. The company offers server management, including server updates, backup, and restore managed services; and full racks services. It serves service providers, voice over IP businesses, and financial transaction processors.
+RapidSwitch Ltd. is a server hosting company providing servers, managed servers solutions, collocation services, and virtual servers in the United Kingdom. It also provides IP transit and other connectivity services. The company offers server management, including server updates, backup, and restore managed services; and full racks services. It serves service providers, voice over IP businesses, and financial transaction processors.
 
-That's a lot of information we have about the app and the app's backend provider! I'm going to continue watching the live stream, brb. 
+We can also find out more about the frameworks/technologies the app is using to stream the live broadcast by dissembling the app's APK file. I'll stop here for now because I'm going to continue watching the live stream, brb.    

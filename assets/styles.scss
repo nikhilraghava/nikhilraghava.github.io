@@ -51,6 +51,14 @@ a {
   color: #000000 !important;
 }
 
+// Color in-para links
+p:not(.f5) a {
+  padding: 2px;
+  background: #000000;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
 img {
   max-width: 100%;
   margin: auto;

@@ -10,7 +10,7 @@ In this example, we will be using linear regression to draw the line of best fit
 
 ## Methodology
 
-Like all machine learning algorithms, we first need to obtain our data to train on. The data file, [`data.csv`](https://raw.githubusercontent.com/nikhilraghava/numpy-linear-regression/master/data.csv) contains 100 rows of student test scores and the number of hours studied. Now, let's start by defining our main function and import everything from Numpy.
+Like all machine learning algorithms, we first need to obtain our data to train on. The data file, [data.csv](https://raw.githubusercontent.com/nikhilraghava/numpy-linear-regression/master/data.csv) contains 100 rows of student test scores and the number of hours studied. Now, let's start by defining our main function and import everything from Numpy.
 
 ```python
 from numpy import *
@@ -56,7 +56,7 @@ Before we proceed onto defining the `step_gradient` function which is our optimi
     <br><img src="https://cldup.com/CL6TX3cVvZ.png" width="401.7" height="72.9"><br><br>
 </div><br>
 
-Essentially, we subtract the `y` value of our line from the `y` value of the data point at a specific `x` value to obtain the margin of error. We square the error because we only want positive values when we sum and also because we are only interested in the magnitude of the value and not the value itself. Then we sum the error across all points and divide them by the number of points to obtain the total error. Now that we have calculated the total error, our goal would be to minimize this error value. Before we look at how we can minimize the error value, let's look at this excellent visualization [[An Introduction to Gradient Descent and Linear Regression](https://spin.atomicobject.com/2014/06/24/gradient-descent-linear-regression)].
+Essentially, we subtract the `y` value of our line from the `y` value of the data point at a specific `x` value to obtain the margin of error. We square the error because we only want positive values when we sum and also because we are only interested in the magnitude of the value and not the value itself. Then we sum the error across all points and divide them by the number of points to obtain the total error. Now that we have calculated the total error, our goal would be to minimize this error value. Before we look at how we can minimize the error value, let's look at this [excellent visualization](https://spin.atomicobject.com/2014/06/24/gradient-descent-linear-regression).
 
 <div align="center">
     <br><img src="https://spin.atomicobject.com/wp-content/uploads/gradient_descent_error_surface.png" width="469.5" height="262"><br><br>
