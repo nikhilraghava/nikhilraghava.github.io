@@ -13,4 +13,4 @@ I'm an autodidact who likes to learn about computing, electronics, space, and de
 ## Certifications
 
 ![16.00x](/assets/img/16.00x.png)
-![CS50](/assets/img/cs50.png)
+![CS50](/assets/img/HarvardCS.png)
