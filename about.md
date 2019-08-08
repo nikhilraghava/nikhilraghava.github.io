@@ -10,3 +10,7 @@ I've also been conferred with the Tan Kah Kee Young Inventors' Award for my inve
 
 I'm an autodidact who likes to learn about computing, electronics, space, and design during my free time. I use this personal website to collect and organize my thoughts and learning experiences into blog posts and tutorials. If you like my posts, kindly share it with people interested in these topics. Hope you find the content in my blog useful 😉.
 
+## Certifications
+
+![16.00x](/assets/img/16.00x.png)
+![CS50](/assets/img/cs50.png)
