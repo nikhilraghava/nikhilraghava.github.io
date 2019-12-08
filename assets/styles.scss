@@ -72,6 +72,11 @@ img[alt="Atlas"] {
   width: 100%; 
 }
 
+// Smaller image
+img[alt="RTL-SDR"] { 
+  width: 30%; 
+}
+
 // Custom style
 img[alt="CS50"] {
   margin-top: 15px; 
