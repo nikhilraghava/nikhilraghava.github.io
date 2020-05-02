@@ -14,13 +14,8 @@ We describe the process of solving problems on the quantum computer in two steps
 
 A binary quadratic model is a collection of binary-valued variables (variables that can be assigned two values, for example -1, 1) with associated linear and quadratic biases. Sometimes referred to in other tools as a problem. In this example, a function in Ocean software handles both steps. Our task is mainly to select the sampler used to solve the problem.
 
-![graph]({{site.baseurl}}/assets/img/vertexgraph.png)
-*Vertex and edge in a general graph.*
-
 We will be using a D-Wave System to find the minimum vertex cover of a star graph. The real-world application for this example might be a network provider’s routers interconnected by fiber-optic cables or traffic lights in a city’s intersections. It is posed as a graph problem; here, the five-node star graph shown below. Intuitively, the solution to this small example is obvious — the minimum set of vertices that touch all edges is node 0, but the general problem of finding such a set is NP-hard.
 
-![graph]({{site.baseurl}}/assets/img/stargraph.png)
-*A five-node star graph.*
 
 First, we run the code snippet below to create a star graph where node 0 is hub to four other nodes. The code uses `NetworkX`, which is part of your `dwave_networkx` or `dwave-ocean-sdk` installation.
 
