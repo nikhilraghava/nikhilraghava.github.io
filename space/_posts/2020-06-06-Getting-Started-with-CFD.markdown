@@ -114,9 +114,11 @@ We'll simulate a non-reactive, subsonic flow by setting `cmode` to `0`. The infl
 
 I'm using the free version of Flowsquare (LOCKED) so the computational speed is restricted to only 50% of the maximimum computational speed possible. You can unlock the software by donating any amount you wish to the authors of the software. Since we set the `latts` to `4000`, we'll have to wait for 4000 iterations before we can view the fully computed CFD results. 
 
-Eventhough I stopped the CFD computation after just 5 iterations, we can conclude that there are two regions of high pressue flow along the surface of the rocket. 
+Even though I stopped the CFD computation after just 5 iterations, we can conclude that there are two regions of high pressue flow along the surface of the rocket. 
 
 - In front/along the nose cone of the rocket.
 - Near the end of the rocket's fuselage.
+
+This result might not be definitive at say step 1000; a lot of things could change by then, and the regions of high pressure might be redistributed over time. You may realise that the simulation runs a lot faster when the boundary velocities are low because smaller numbers are easier to work with when you have thousands of calculations to perform for every single grid point on the grid. The speed of simulation depends on both the software and the hardware it's running on. Flowsquare will run two times faster if we unlock it via software and any performance gains after that will really depend on your hardware setup. 
 
 Using this knowledge you can simulate anything from flow along airfoils to supersonic flows. Just remember to change the appropriate values in `grid.txt` and use Microsoft Paint 😉.
