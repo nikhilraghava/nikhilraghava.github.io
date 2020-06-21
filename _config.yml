@@ -1,50 +1,54 @@
-layout: stacked
-style: light
+name: Nikhil Raghavendra
+description: ⚔️ Sic Parvis Magna ⚔️
+meta_description: "I am a Computer Engineering graduate from Singapore Polytechnic currently serving the nation. I'm awaiting entry into Nanyang Technological University's Electrical and Electronic Engineering program next year."
+meta_tags: "nikhil, sp, singapore polytechnic, computer, computer engineering, ntu, nanyang technological university, space, eee"
+
+aboutPage: true
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
 
 plugins:
-  - jekyll-octicons
-  - jekyll-github-metadata
-  - jemoji
+  - jekyll-sitemap
+  - jekyll-paginate
 
-permalink: /:year/:month/:day/:title/
+paginate: 2000
+baseurl:
+domain_name: 'https://geekfile.xyz'
+
+#social-icons 
+twitter: AstroRaghava
+instagram: nikhilraghava
+linkedin: nikhilraghavendra
+github: nikhilraghava
+email: raghavendranikhil@gmail.com
+
+# Details for the RSS feed generator
+url:            'https://geekfile.xyz'
+author:         'Nikhil Raghavendra'
+authorTwitter:  'AstroRaghava'
+
+permalink:       /:year/:title/
 
 defaults:
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts"
-    values:
-      layout: "post"
-
-projects:
-  sort_by: pushed
-  # sort_by options:
-  #   - pushed
-  #   - stars
-  limit: 9
-  exclude:
-    forks: true
-    projects:
-    # - repo-name
-
-repositories:
-  - OpenVINO-18.04-Support
-  - Granite
-  - SP-Siri-Shortcuts
-  - OpenAI-CartPole-v0
-  - xBoot
-  - ML-Antivirus
-  - Color-Trek
-  - dirm
-  - amber-and-snake
-
-social_media:
-  # behance: your_username
-  # dribbble: your_username
-  # facebook: your_username
-  linkedin: nikhilraghavendra
-  medium: "@nikraghava"
-  # stackoverflow: your_user_id
-  # telegram: your_username
-  twitter: maranacoder
-  # youtube: your_username
-  # vk: your_username
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
