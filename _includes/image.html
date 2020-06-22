@@ -6,7 +6,7 @@
 		{% else %}
 		<div style="display:inline-block;">
 		{% endif %}
-			<img src="{{ image }}" height="{{ include.height }}">
+			<img src="{{ image }}" style="max-width: {{ include.maxwidth }}">
 		</div>
 		{% assign first_img = false %}
 	{% endfor %}

@@ -85,4 +85,4 @@ m: [-0.9999969] c: [ 0.99999082] loss: 5.69997e-11
 Using TensorBoard we get the following graph of our model.
 
 {% assign imgs = "https://cldup.com/XT5pcT4YUk.png," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="TensorBoard graph of our linear regression model." %}<br class="img">
+{% include image.html images=imgs maxmaxwidth="100%" caption="TensorBoard graph of our linear regression model." %}<br class="img">

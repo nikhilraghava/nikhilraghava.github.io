@@ -18,7 +18,7 @@ FPGAs are very different to a traditional microcontroller board. With a microcon
 
 
 {% assign imgs = "../../assets/images/tinyfpga.jpg," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="The TinyFPGA BX" %}<br class="img">
+{% include image.html images=imgs maxwidth="100%" caption="The TinyFPGA BX" %}<br class="img">
 
 The TinyFPGA BX is a maker-friendly breadboardable FPGA board powered by Lattice Semiconductor's ICE40LP8K FPGA chip. The FPGA features 7,680 four-input look-up-tables, 128 KBit of block RAM, Phase Locked Loop (PLL) and 41 user IO pins. The TinyFPGA BX has 8 MBit of SPI flash and can be programmed using a standard micro-USB cable. Onboard 3.3 V (300 mA) and 1.2 V (150 mA) Low-Dropout (LDO) regulators offer protection against voltage fluctuations.
 

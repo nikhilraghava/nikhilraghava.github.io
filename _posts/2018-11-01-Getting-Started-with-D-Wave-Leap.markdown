@@ -9,7 +9,7 @@ categories: Quantum Computing
 I recently got access to the D‑Wave Leap™ Quantum Application Environment (QAE). Leap is the first cloud-based QAE providing real-time access to a live quantum computer. The QAE features 2038 qubits and has a typical operating qubit temperature of 14.5±1 mK. D-Wave allows developers to develop software that will run on the D-Wave system using their D-Wave Ocean SDK for Python. D-Wave recommends that we work in a virtual environment when developing software to run on the QAE.
 
 {% assign imgs = "../../assets/images/dwaveqpu.png," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="D-Wave System's quantum computer." %}<br class="img">
+{% include image.html images=imgs maxwidth="100%" caption="D-Wave System's quantum computer." %}<br class="img">
 
 Before we can start coding and submitting our jobs to D-Wave's systems, we need to install and configure D-Wave's Ocean tools. Ocean tools allow us to run our jobs on a D-Wave system (Quantum Processing Unit) or locally (Central Processing Unit/Graphical Processing Unit).
 
@@ -105,7 +105,7 @@ dwave ping
 The output of the command should look similar to that of the image below.
 
 {% assign imgs = "../../assets/images/dwaveping.jpeg," | split: ',' %}
-{% include image.html images=imgs width="100%"%}<br class="img">
+{% include image.html images=imgs maxwidth="100%"%}<br class="img">
 
 We can run the `dwave sample --random-problem` command to submit a random problem to our configured solver. The output of the command should look similar to the one shown below.
 

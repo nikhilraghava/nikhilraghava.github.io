@@ -4,13 +4,12 @@ title: "Rocket Staging"
 description: "Drop 'em if you don't need 'em"
 date: 2019-06-20 9:00:55 +0800
 categories: Space Exploration
-mathjax: true
 ---
 
 In my previous article, we concluded that the ideal rocket equation puts a limit on the fraction of the mass of the rocket we can devote to the structure of the vehicle and the payload. In other words, we want to make rockets as light as possible. An extreme example of an attempt to make a rocket as light as possible would be the SM-65 Atlas rocket. The Atlas boosters would collapse under their own weight if not kept pressurized with nitrogen gas in the tanks when devoid of propellants. The Atlas booster was unusual in its use of "balloon" tanks. The rockets were made from very thin stainless steel that offered minimal or no rigid support. It was pressure in the tanks that gave the rigidity required for space flight. In order to save weight they were not painted and needed a specially designed oil to prevent rust, this was the original use of WD-40 penetrating oil.
 
 {% assign imgs = "../../assets/images/atlas.jpg," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="The Big Joe 1, ATLAS 10D rocket launched from Pad-LC-14 on September 9, 1959." %}<br class="img">
+{% include image.html images=imgs maxwidth="100%" caption="The Big Joe 1, ATLAS 10D rocket launched from Pad-LC-14 on September 9, 1959." %}<br class="img">
 
 In order to increase our payload capacity while keeping our rocket structurally sound, we want to have as high an exhaust velocity as possible, which means we want the temperatures and pressures in our combustion chamber to be as high as possible. We don't have metals which will tolerate long exposures to rocket exhaust, so we need to prevent the rocket nozzle from melting.
 
@@ -65,6 +64,6 @@ Notable single stage to orbit research spacecraft include Skylon, the DC-X, the 
 SSTO is much easier to achieve on extraterrestrial bodies which have weaker gravitational fields and lower atmospheric pressure than Earth, such as the Moon and Mars, and has been achieved from the Moon by both the Apollo program's Lunar Module and several robotic spacecraft of the Soviet Luna program.
 
 {% assign imgs = "../../assets/images/skylon.png," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="The Skylon vehicle is intended to be an aircraft designed to reach orbit." %}<br class="img">
+{% include image.html images=imgs maxwidth="100%" caption="The Skylon vehicle is intended to be an aircraft designed to reach orbit." %}<br class="img">
 
 SSTO is practically impossible even with our most advanced liquid rocket propulsion systems. So how does Skylon plan to achieve SSTO? Skylon is hydrogen-oxygen propelled. In this propellant system, the oxygen weighs 8 times as much as the hydrogen (with a chemically balanced mix). By breathing air for the first part of the ascent, it can gain significant velocity and height before it switches to liquid oxygen from the tank. This is how Skylon makes the single stage to orbit concept theoretically possible.

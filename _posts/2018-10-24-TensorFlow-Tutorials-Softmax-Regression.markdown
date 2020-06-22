@@ -166,4 +166,4 @@ Running the above code should give you an accuracy close to about `92.0%`. In ou
 Using TensorBoard we get the following graph of our model.
 
 {% assign imgs = "https://cldup.com/xLR0_THUyx.png," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="TensorBoard graph of our softmax regression model." %}<br class="img">
+{% include image.html images=imgs maxmaxwidth="100%" caption="TensorBoard graph of our softmax regression model." %}<br class="img">

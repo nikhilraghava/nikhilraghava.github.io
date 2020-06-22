@@ -4,7 +4,6 @@ title:  "Newton's Method for Finding Roots"
 description: "Find your roots Newton style"
 date:   2018-10-21 16:12:55 +0800
 categories: Machine Learning
-mathjax: true
 ---
 
 First order optimization techniques are usually less computationally expensive to compute and less time expensive, converging pretty fast on large datasets. Second order optimization techniques on the other hand are faster when the second derivative is known and easy to compute. But the second derivative is often intractable to compute, requiring lots of computation. For certain problems, gradient descent can get stuck along paths of slow convergence around saddle points, whereas second order methods wont't.
@@ -32,7 +31,7 @@ def dx(x):
 Our function is a polynomial equation, $$ f(x) = 6x^5 - 5x^4 - 4x^3 + 3x^2 $$. The derivative of this function is, $$ f'(x) = 30x^4 - 20x^3 - 12x^2 + 6x $$ If we were to plot our $$ f(x) $$ against $$ x $$, we would get the following graph.
 
 {% assign imgs = "../../assets/images/newtongraph.png," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="The graph's x-intercepts and the polynomial equation's roots are the same." %}<br class="img">
+{% include image.html images=imgs maxmaxwidth="100%" caption="The graph's x-intercepts and the polynomial equation's roots are the same." %}<br class="img">
 
 
 Our roots are -0.8, 0, 0.6ish and 1.

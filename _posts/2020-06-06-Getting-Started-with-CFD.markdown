@@ -15,7 +15,7 @@ CFD is based on the Navier-Stokes equations. Arising from applying Newton’s se
 Flowsquare is a 2D CFD software for unsteady, non-reactive/reactive flows. The aim of this software is to provide a handy CFD environment so that more people can get to know what CFD is like and simulate flows for their educational interests. For example, a typical commercial CFD software costs at least several thousands dollars for one license and requires a lot of computational resources and skills. They are untouchable for most of us. Flowsquare is free of charge, and does not require any professional skills, such as programming, CAD, meshing, preprocessing, post-processing; all we need to do is draw a simple illustration of a simulation field using any available paint tool such as Microsoft Paint.
 
 {% assign imgs = "../../assets/images/flowsquare.png," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="Flowsquare start up page." %}<br class="img">
+{% include image.html images=imgs maxwidth="100%" caption="Flowsquare start up page." %}<br class="img">
 
 Using Flowsquare, we can simulate non-reacting flows, reacting flows (e.g. combustion; both for premixed and non-premixed mixtures) and subsonic/supersonic flows. Some unique features of Flowsquare include:
 
@@ -106,12 +106,12 @@ Specifically for Blue, Red and Pink boundaries, they can be set only on the edge
 Let's say we built a small rocket that travels at 200 m/s at sea level (density of air is 1.225 kg/m^3) we have to set appropriate values for the following variables in `grid.txt`.
 
 {% assign imgs = "../../assets/images/gridtxt.png," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="Setting appropriate values for variables in grid.txt" %}<br class="img">
+{% include image.html images=imgs maxwidth="100%" caption="Setting appropriate values for variables in grid.txt" %}<br class="img">
 
 We'll simulate a non-reactive, subsonic flow by setting `cmode` to `0`. The inflow boundary and general boundary share the same flow velocity along the x-axis of the boundaries because we're interested in the in-flight dynamics of the rocket. Now, let's run the simulation.
 
 {% assign imgs = "../../assets/images/pressflow.png," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="Computed pressure distribution of the flow along the surface of the rocket after 5 iterations." %}<br class="img">
+{% include image.html images=imgs maxwidth="100%" caption="Computed pressure distribution of the flow along the surface of the rocket after 5 iterations." %}<br class="img">
 
 I'm using the free version of Flowsquare (LOCKED) so the computational speed is restricted to only 50% of the maximimum computational speed possible. You can unlock the software by donating any amount you wish to the authors of the software. Since we set the `latts` to `4000`, we'll have to wait for 4000 iterations before we can view the fully computed CFD results. 
 

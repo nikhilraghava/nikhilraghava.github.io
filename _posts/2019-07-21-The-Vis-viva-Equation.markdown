@@ -11,7 +11,7 @@ In orbital mechanics, the Hohmann transfer orbit is an elliptical orbit used to 
 Space missions using a Hohmann transfer must wait for the starting and destination points be at particular locations in their orbits relative to each other before performing a Hohmann transfer, which opens a so-called launch window. For a space mission between Earth and Mars, these launch windows occur every 26 months. A Hohmann transfer orbit also determines a fixed time required to travel between the starting and destination points; for an Earth-Mars journey, this travel time is 9 months.
 
 {% assign imgs = "../../assets/images/hohmann.png," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="A Hohmann transfer orbit to bring a spacecraft from a lower circular orbit into a higher one."%}<br class="img">
+{% include image.html images=imgs maxwidth="100%" caption="A Hohmann transfer orbit to bring a spacecraft from a lower circular orbit into a higher one."%}<br class="img">
 
 The diagram above shows a Hohmann transfer orbit to bring a spacecraft from a lower circular orbit into a higher one. It is one half of an elliptic orbit that touches both the lower circular orbit the spacecraft wishes to leave (blue and labeled 1 on diagram) and the higher circular orbit that it wishes to reach (green and labeled 3 on diagram). The transfer (yellow and labeled 2 on diagram) is initiated by firing the spacecraft's engine (posigrade burn) at the periapsis to accelerate it so that it will follow the elliptical orbit. This adds energy to the spacecraft's orbit. When the spacecraft has reached its destination orbit at the apoapsis, its orbital speed (and hence its orbital energy) must be increased again to change the elliptic orbit to the larger circular one.
 
@@ -100,7 +100,7 @@ $$ \mathrm{\Delta v} = \sqrt{\frac{\mu}{r_{2}}}\left(1-\sqrt{\frac{2 r_{1}}{r_{1
 Now, let's fire up Kerbal Space Program and put the vis-viva equation to the test. I used one of Kerbal Space Program's stock rockets: Kerbal X to simulate the Hohmann transfer. According to Kerbal Space Program, "The Kerbal X is one of the most successful rockets that can be ordered from a catalog. Despite the original design having been meant for a plastic model, it's proved itself quite dependable as a full-sized craft. The X is capable of achieving orbit around Kerbin and even features a very optimistic set of landing legs on its upper stage."
 
 {% assign imgs = "../../assets/images/kerbalx.png," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="Kerbal X blueprint." %}<br class="img">
+{% include image.html images=imgs maxwidth="100%" caption="Kerbal X blueprint." %}<br class="img">
 
 
 Kerbal Space Program's wiki says: "The first stage's central engine and relative fuel tank has 2973 m/s of Δv, not mentioning the radial ring of boosters which has 1063 m/s. This sums up to about 4036 m/s, enough to make orbit (3500 m/s) with some to spare, making the Kerbal X launch vehicle a suitable option for orbiting small-to-medium payloads. The maximum payload to Kerbin low orbit of the unmodified Kerbal X launch vehicle is slightly less than 24 tons.
@@ -110,7 +110,7 @@ The second stage has 2392 m/s Δv, and the total Δv is 6428 m/s. This total imp
 Before we perform the Hohmann transfer, we put Kerbal X in orbit around Kerbin with an apoapsis of 1,250,505 m and a periapsis of  1,229,999 m. We want our spacecraft to transfer to the Mun's orbit which is about 11,400,000 m above Kerbin's surface. 
 
 {% assign imgs = "../../assets/images/kspone.png," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="Hohmann transfer in Kerbal Space Program." %}<br class="img">
+{% include image.html images=imgs maxwidth="100%" caption="Hohmann transfer in Kerbal Space Program." %}<br class="img">
 
 Now, let's calculate the $$ \mathrm{\Delta v} $$ required to transfer to Mun's orbit, which is about 11,400,000 m from Kerbin's surface. The standard gravitation parameter, $$ \mu $$, of Kerbin is about $$ 3.53 \times 10^{12} \ \mathrm{m}^{3} /\mathrm{s}^{2} $$ and the distance between the spacecraft and Kerbin's center (Kerbin's equatorial radius is 600,000 m) at the periapsis is about $$ 1.83 \times 10^{6} \ \mathrm{m} $$. This will be our $$ r_1 $$ distance. The distance between Mun's center and Kerbin's center is $$ 12 \times 10^{6} \ \mathrm{m} $$. This will be our $$ r_2 $$ distance. Plugging the values into the vis-viva equation:
 

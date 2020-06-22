@@ -11,25 +11,25 @@ Konstantin Tsiolkovsky was a Russian and Soviet rocket scientist and pioneer of 
 The Album of Space Travel, published in 1932, shows Tsiolkovsky's visionary ideas about life in space, including discussions of zero gravity, air pressure locking, space habitats, and rocket guidance. I have curated some of Tsiolkovsky's original work depicting his visionary ideas about space travel, [archived](http://www.ras.ru/ktsiolkovskyarchive/1_actview.aspx?id=84) by the Russian Academy of Sciences, which you can find in the gallery below.
 
 {% assign imgs = "../../assets/images/AST1.png," | split: ',' %}
-{% include image.html images=imgs width="100%"%}<br class="img">
+{% include image.html images=imgs maxwidth="100%"%}<br class="img">
 
 {% assign imgs = "../../assets/images/AST2.png," | split: ',' %}
-{% include image.html images=imgs width="100%"%}<br class="img">
+{% include image.html images=imgs maxwidth="100%"%}<br class="img">
 
 {% assign imgs = "../../assets/images/AST3.png," | split: ',' %}
-{% include image.html images=imgs width="100%"%}<br class="img">
+{% include image.html images=imgs maxwidth="100%"%}<br class="img">
 
 {% assign imgs = "../../assets/images/AST4.png," | split: ',' %}
-{% include image.html images=imgs width="100%"%}<br class="img">
+{% include image.html images=imgs maxwidth="100%"%}<br class="img">
 
 {% assign imgs = "../../assets/images/AST5.png," | split: ',' %}
-{% include image.html images=imgs width="100%"%}<br class="img">
+{% include image.html images=imgs maxwidth="100%"%}<br class="img">
 
 {% assign imgs = "../../assets/images/AST6.png," | split: ',' %}
-{% include image.html images=imgs width="100%"%}<br class="img">
+{% include image.html images=imgs maxwidth="100%"%}<br class="img">
 
 {% assign imgs = "../../assets/images/AST7.png," | split: ',' %}
-{% include image.html images=imgs width="100%"%}<br class="img">
+{% include image.html images=imgs maxwidth="100%"%}<br class="img">
 
 {% assign imgs = "../../assets/images/AST8.png," | split: ',' %}
-{% include image.html images=imgs width="100%"%}<br class="img">
+{% include image.html images=imgs maxwidth="100%"%}<br class="img">

@@ -49,14 +49,20 @@ margin-bottom: 20px;
 }
 
 /* Base */
-html, body { height: 100%; }
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+	padding:0;
+    margin:0;
+}
 
 body {
+	min-height: 100vh;
+	position: relative;
 	font:16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #666;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
-	overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 h1 {
@@ -100,8 +106,8 @@ br {
 
 .profile #avatar {
 	display: inline-block;
-	width: 80px;
-	height: 80px;
+	width: 150px;
+	height: 150px;
 	border-radius: 50%;
 	margin-bottom: 20px;
 }
@@ -329,15 +335,20 @@ pre	{
 table {
 	width: 100%;
 	margin: 40px 0;
-	border-collapse: collapse;
 	font-size: 13px;
 	line-height: 1.5em;
+	box-sizing:border-box; /* causes item size to include border and padding */
+	-moz-box-sizing:border-box; /*for browser compatibility*/
+	table-layout:fixed;
 }
 
 th,td {
 	text-align: left;
 	padding-right: 20px;
 	vertical-align: top;
+	overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
 }
 
 table td,td {
@@ -368,8 +379,10 @@ thead th,th {
 }
 
 img {
-	max-width: 100%;
+	width: 100%;
+	height: auto;
 }
+
 .imgblock {
 	text-align: center;
 }

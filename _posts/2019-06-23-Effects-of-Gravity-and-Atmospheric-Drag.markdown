@@ -4,7 +4,6 @@ title: "The Effects of Gravity and Atmospheric Drag"
 description: "The force is real"
 date: 2019-06-23 9:00:55 +0800
 categories: Space Exploration
-mathjax: true
 ---
 
 When we launch rockets from Earth, we’re not flying in free space; we have to fly through the Earth's atmosphere and gravity field. The Earth's atmosphere and gravity field play a vital role in determining the rocket's performance and the success of the mission. 
@@ -33,7 +32,7 @@ Therefore (by Rolle's theorem) there will always be a point where the dynamic pr
 In other words, before reaching max q, the dynamic pressure change due to increasing velocity is greater than that due to decreasing air density so that the dynamic pressure (opposing kinetic energy) acting on the craft continues to increase. After passing max q, the opposite is true. The dynamic pressure acting against the craft decreases as the air density decreases, ultimately reaching 0 when the air density becomes zero.
 
 {% assign imgs = "../../assets/images/maxq.gif," | split: ',' %}
-{% include image.html images=imgs width="100%" %}<br class="img">
+{% include image.html images=imgs maxwidth="100%" %}<br class="img">
 
 This graph was taken from the Apollo 8 launch, it illustrates the changes in the vehicle's Mach number, and the dynamic pressure the vehicle experiences as it rises through the atmosphere. The Apollo 8 Flight Journal's comment on the graph reads: "... Apollo 8 reaches Mach 1, the speed of sound, and is already at 7.35 km altitude. As the vehicle gains speed, the aerodynamic forces acting upon it also rise. However, as it ascends and encounters thinner air, these forces will decrease and at about this point, 1 minute, 18.9 seconds into the flight and 13,430 meters (44,062 feet) altitude, the stack reaches the point of maximum dynamic pressure, often called Max Q, where the interaction of these two phenomena has the largest effect on the vehicle's structure. It is usually considered the most dangerous part of the whole ascent."
 

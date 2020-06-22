@@ -13,7 +13,7 @@ I was about to go to bed last night, and my brain started to behave like an over
 Before we start coding, it's helpful to look up the man page for the `mkdir` system call.
 
 {% assign imgs = "../../assets/images/mkdirman.png," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="Man page for the mkdir system call." %}<br class="img">
+{% include image.html images=imgs maxwidth="100%" caption="Man page for the mkdir system call." %}<br class="img">
 
 The man page says the argument `mode` specifies the `mode` for the new directory. "What is mode?", you may ask, it's the base permission of the directory that we will be creating. The effective permisson of the new directory will be determined by the `mode` number and the process's `umask` number. The default `umask` number is `22` (octal) and the default mode of a directory with an effective permission `drwxr-xr-x` (default permission of a directory created when `mkdir` is called) will be `777` (octal). The other obvious argument that we're interested in is the `pathname`.
 

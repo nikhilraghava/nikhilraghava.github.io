@@ -23,21 +23,21 @@ My friends and I worked on different features of the project. The project had th
 The first step in our pipeline is face detection. We need to locate the faces in a photograph taken by the TraceON camera modules before we can try to tell them apart. If you’ve used any camera in the last 10 years, you’ve probably seen face detection in action:
 
 {% assign imgs = "../../assets/images/iphoneface.png," | split: ',' %}
-{% include image.html images=imgs height="300px" caption="Face detection in the iPhone's Camera app." %}<br class="img">
+{% include image.html images=imgs maxwidth="585px" caption="Face detection in the iPhone's Camera app." %}<br class="img">
 
 Face detection is a great feature for cameras. When the camera can automatically pick out faces, it can make sure that all the faces are in focus before it takes the picture. FaceHash uses face detection for a different purpose — finding the areas of the image we want to pass on to the next step in our pipeline. Face detection went mainstream in the early 2000's when Paul Viola and Michael Jones invented a way to detect faces that was fast enough to run on cheap cameras. However, much more reliable solutions exist now. We’re going to use a method invented in 2005 called Histogram of Oriented Gradients — or just HOG for short.
 
 To find faces in an image, we start by making our image black and white because we don’t need color data to find faces. Then we’ll look at every single pixel in our image one at a time. For every single pixel, we want to look at the pixels that directly surrounding it:
 
 {% assign imgs = "../../assets/images/facehog.gif," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="Looking at just this one pixel and the pixels touching it, the image is getting darker towards the upper right." %}<br class="img">
+{% include image.html images=imgs maxwidth="100%" caption="Looking at just this one pixel and the pixels touching it, the image is getting darker towards the upper right." %}<br class="img">
 
 Our goal is to figure out how dark the current pixel is compared to the pixels directly surrounding it. Then we want to draw an arrow showing in which direction the image is getting darker. If you repeat that process for every single pixel in the image, you end up with every pixel being replaced by an arrow. These arrows are called gradients and they show the flow from light to dark across the entire image. This might seem like a random thing to do, but there’s a really good reason for replacing the pixels with gradients. If we analyze pixels directly, really dark images and really light images of the same person will have totally different pixel values. But by only considering the direction that brightness changes, both really dark images and really bright images will end up with the same exact representation. That makes the problem a lot easier to solve. 
 
 However, saving the gradient for every single pixel gives us way too much detail. We end up missing the forest for the trees. It would be better if we could just see the basic flow of lightness/darkness at a higher level so we could see the basic pattern of the image. To do this, we’ll break up the image into small squares of 16x16 pixels each. In each square, we’ll count up how many gradients point in each major direction (how many point up, point up-right, point right, etc.). Then we’ll replace that square in the image with the arrow directions that were the strongest. The end result is we turn the original image into a very simple representation that captures the basic structure of a face in a simple way:
 
 {% assign imgs = "../../assets/images/hogtwo.gif," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="The image is turned into a HOG representation that captures the major features of the image regardless of image brightnesss." %}<br class="img">
+{% include image.html images=imgs maxwidth="100%" caption="The image is turned into a HOG representation that captures the major features of the image regardless of image brightnesss." %}<br class="img">
 
 To find faces in this HOG image, all we have to do is find the part of our image that looks the most similar to a known HOG pattern that was extracted from a bunch of other training faces.
 
@@ -48,7 +48,7 @@ Whew, we isolated the faces in our image. Now we have to deal with the problem t
 Once we know where the eyes and mouth are, we’ll simply rotate, scale and shear the image so that the eyes and mouth are centered as best as possible. We won’t do any fancy 3D warps because that would introduce distortions into the image. We are only going to use basic image transformations like rotation and scale that preserve parallel lines (called affine transformations):
 
 {% assign imgs = "../../assets/images/posealign.png," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="We transform the image so that the eyes and mouth are centered as best as possible." %}<br class="img">
+{% include image.html images=imgs maxwidth="100%" caption="We transform the image so that the eyes and mouth are centered as best as possible." %}<br class="img">
 
 Now, no matter how the face is turned, we are able to center the eyes and mouth in roughly the same position. This will make our next step a lot more accurate. 
 
@@ -71,7 +71,7 @@ We call this process embedding. The idea of reducing complicated raw data like a
 This process of training a Convolutional Neural Network to output face embeddings requires a lot of data and computer power. Even with an expensive Nvidia Telsa graphics card, it takes about 24 hours of continuous training to get good accuracy.However, once the network has been trained, it can generate measurements for any face, even ones it has never seen before! So this step only needs to be done once. Lucky for us, the folks at OpenFace already did this and they published several trained networks which we can directly use. So all we need to do is run our face images through their pre-trained network to get the 128 measurements for each face. Here’s the measurements for our test image:
 
 {% assign imgs = "../../assets/images/faceembed.png," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="Embedding generated for a given image of a face." %}<br class="img">
+{% include image.html images=imgs maxwidth="100%" caption="Embedding generated for a given image of a face." %}<br class="img">
 
 What parts of the face are these 128 numbers measuring exactly? It turns out that we have no idea and it doesn’t really matter to us. All that we care about is that the network generates ***nearly the same numbers*** when looking at two different pictures of the same person.
 
@@ -80,7 +80,7 @@ What parts of the face are these 128 numbers measuring exactly? It turns out tha
 Now that we have generated the embeddings for our faces, we can hash these embeddings to get a unique identifier for each face that we have seen. This process eventually ties a unique identifier to anyone we want to trace. This FaceHash can also be tied to their national identification number. I used a relatively simple hashing algorithm called MD5 for this project. The MD5 message-digest algorithm is a widely used hash function that produces a 128-bit hash value. Although MD5 was initially designed to be used as a cryptographic hash function, it has been found to suffer from extensive vulnerabilities since 1996 when the first hash collisions were detected. You can choose to use a more secure hashing algorithm like SHA256, but you’ll have to compromise on computational speed. The whole process of FaceHashing will look like this: 
 
 {% assign imgs = "../../assets/images/facehash.jpeg," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="Faces taken from thispersondoesnotexist.com" %}<br class="img">
+{% include image.html images=imgs maxwidth="100%" caption="Faces taken from thispersondoesnotexist.com" %}<br class="img">
 
 We tried FaceHashing our faces and I have to admit, it's not 100% accurate. Factors such as lighting, shadows, quality of the image, and even the person's physical appearance can affect how the embeddings are generated, and this eventually affects the FaceHashes generated at the end of the pipeline. As mentioned in the previous section, the "network generates ***nearly the same numbers*** when looking at two different pictures of the same person", this implies that there can be instances where different embeddings are generated for two different pictures of the same person, also affecting the FaceHash generated at the end of the pipeline.
 

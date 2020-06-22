@@ -36,7 +36,7 @@ Addresses in x86 processors are calculated by adding the segment address value t
 Although we won't explicitly be using the stack segment, its good practice to set up one — especially given the fact that some instructions explicitly make use of the segments. It would also be inappropriate not to define a stack if the bootloader were to be expanded beyond our current functionality. I am going to structure the bootloader such that it has a 1K stack just after the location of the boot sector in memory. Our boot sector will be loaded into `0x7C00` and is `0x200` (512) bytes wide, we want our stack to reside just after this. In x86, segments are referred to as 64K chunks of memory and not as specific locations.
 
 {% assign imgs = "../../assets/images/boot-stack.png," | split: ',' %}
-{% include image.html images=imgs width="100%" caption="The boot stack." %}<br class="img">
+{% include image.html images=imgs maxmaxwidth="100%" caption="The boot stack." %}<br class="img">
 
 
 Before we assign the final location to the stack segment we need to divide the address values by 16. The code to set up our 1K stack is as follows:
@@ -132,5 +132,5 @@ qemu-system-x86_64 -drive format=raw,file=boot.bin
 QEMU will open up in a separate window and boom you have written your very own bootloader!
 
 {% assign imgs = "../../assets/images/xBoot.png," | split: ',' %}
-{% include image.html images=imgs width="100%" %}<br class="img">
+{% include image.html images=imgs maxmaxwidth="100%" %}<br class="img">
 
