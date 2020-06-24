@@ -34,11 +34,10 @@ $$
 \operatorname{softmax}(x)_{i}=\frac{\exp \left(x_{i}\right)}{\sum_{j} \exp \left(x_{j}\right)}
 $$
 
-Our softmax regression model can be pictured as looking something like the following, but with a lot more `x`s. 
+Our softmax regression model can be pictured as looking something like the following, but with a lot more `x`s.
 
-<div align="center">
-<br><img src="https://www.tensorflow.org/images/softmax-regression-scalargraph.png" width="581.4" height="232.2"><br>
-</div><br>
+{% assign imgs = "https://www.tensorflow.org/images/softmax-regression-scalargraph.png," | split: ',' %}
+{% include image.html images=imgs maxwidth="581px" %}<br class="img">
 
 In summary, our model can be written as:
 
@@ -48,9 +47,9 @@ $$
 
 Visualizing the above equation in terms of vectors, we get:
 
-<div align="center">
-<br><img src="https://www.tensorflow.org/images/softmax-regression-vectorequation.png" width="524.8" height="128"><br>
-</div><br>
+{% assign imgs = "https://www.tensorflow.org/images/softmax-regression-vectorequation.png," | split: ',' %}
+{% include image.html images=imgs maxwidth="524px" %}<br class="img">
+
 
 Now that we have defined our entire model in mathematical terms, let's start coding.
 
