@@ -15,6 +15,7 @@ profile: true
 		</p>
 		<ul>
 			<li><a href="https://www.sp.edu.sg/engineering-cluster/eee/courses/full-time-diplomas/computer-engineering/achievements/dcpe-students-won-2nd-prize-in-airbus-ssta-humanitarian-assistance-and-disaster-relief-(hadr)-challenge-for-ay18-19" target="blank">Article</a></li>
+			<li><a href="https://youtu.be/wyqBIW8VLVs" target="blank">Video</a></li>
 		</ul>
 	</div>
 </div>
@@ -24,7 +25,7 @@ profile: true
 		<img src="{{ site.baseurl }}/assets/images/shin.jpg" alt="News" />
 	</div>
 	<div class="info">
-		<h1>Cultivating a growth mindset</h1>
+		<h1>Cultivating a Growth Mindset</h1>
 		<p class="desc">
 			This article by The New Paper explains how my mentor: Mr Teo Shin Jen's Teach, Coach and Mentor (TCM) framework has helped mentees like me realise my ideas and impact the society. I've been advised by him on various projects ranging from hackathons to my Final Year Project. Read the article to know more about his TCM framework and how students like me have benefitted from it. 
 		</p>
