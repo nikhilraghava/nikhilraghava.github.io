@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Getting Started with 2D Computational Fluid Dynamics"
-description: "It's all about fliud movement"
+description: "It's all about fluid movement"
 date: 2020-06-06 10:27:55 +0800
 categories: aeronautics
 ---

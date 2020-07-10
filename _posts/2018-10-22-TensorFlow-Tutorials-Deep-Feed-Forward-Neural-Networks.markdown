@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Deep Feed Forward Neural Networks with TensorFlow"
-description: "A breif introduction to deep feed forward neural networks in TensorFlow"
+description: "A brief introduction to deep feed forward neural networks in TensorFlow"
 date:   2018-10-22 14:00:00 +0800
 categories: Machine Learning
 ---
