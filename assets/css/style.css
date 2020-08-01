@@ -98,7 +98,7 @@ br {
 
 .profile #header {
 	border-bottom: 1px solid #eee;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	padding-bottom: 40px;
 	text-align: center;
 	position: relative;
@@ -690,7 +690,7 @@ h2.month {
   width: 35px;
 }
 .social-links > .link:hover > .icon {
-  fill: #4b0082;
+  fill: #cc3e44;
 }
 .social-links > .link:hover:before {
   opacity: 1;
