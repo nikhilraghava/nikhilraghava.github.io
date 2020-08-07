@@ -12,7 +12,7 @@ Last year, my friends I competed in the annual SSTA-HADR Challenge, which was or
 
 In the immediate aftermath of a flood disaster, survivors communicate from their mobile phones with friends, family, and emergency services. As a result, telephone networks become congested, making it difficult for people to contact each other. Depending on the severity of the disaster, a majority of the infrastructure that supports mobile communication could also be destroyed, rendering mobile communications ineffective. Our project aimed to create a long-range radio handset that can be used by all survivors as well as relief workers regardless of technical literacy and language. This is to allow for clear communication, easy use, and fast actions that are required in a disaster scenario where every second count.
 
-{% assign imgs = "../../assets/images/hopecomp.jpg," | split: ',' %}
+{% assign imgs = "../../assets/images/hoco.png," | split: ',' %}
 {% include image.html images=imgs maxwidth="100%" caption="HOPE & COMPASS" %}<br class="img">
 
 Our solution consisted of a handset (HOPE) that is to be used by survivors/relief workers and a dashboard (COMPASS) that is to be used by HADR teams and Command and Control (C2) operators. In a disaster scenario, HOPE is first packaged into a shock and water-resistant container, attached to Airbus' HAPS, the Zephyr, before being jettisoned above the disaster site, where survivors and rescue workers can pick up the handset and start communicating with the C2 HQ.
