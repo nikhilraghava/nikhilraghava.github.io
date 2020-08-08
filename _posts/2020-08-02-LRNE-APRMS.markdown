@@ -6,7 +6,7 @@ date: 2020-08-02 10:27:55 +0800
 categories: technology
 ---
 
-Last year, my friends I competed in the annual SSTA-HADR Challenge, which was organized by the Singapore Space and Technology Association in partnership with Airbus Defence and Space and supported by the S. Rajaratnam School of International Studies (RSIS), Singapore Armed Forces and the Singapore Civil Defence Force. My team and I conceived, designed, and built a Long-Range Node Extended Automatic Packet Reporting Mesh System (LRNE-APRMS) to help disaster relief workers communicate with Command & Control (C2) HQ via High-Altitude Pseudo-Satellites (HAPS). We managed to win  2nd place and were given a spot in the Global Space and Technology Convention (GSTC) to pitch our winning solution to industry members and government officials. I'd like to tell you more about this project in this blog post.
+Last year, my friends and I competed in the annual SSTA-HADR Challenge, which was organized by the Singapore Space and Technology Association in partnership with Airbus Defence and Space and supported by the S. Rajaratnam School of International Studies (RSIS), Singapore Armed Forces and the Singapore Civil Defence Force. My team and I conceived, designed, and built a Long-Range Node Extended Automatic Packet Reporting Mesh System (LRNE-APRMS) to help disaster relief workers communicate with Command & Control (C2) HQ via High-Altitude Pseudo-Satellites (HAPS). We managed to win  2nd place and were given a spot in the Global Space and Technology Convention (GSTC) to pitch our winning solution to industry members and government officials. I'd like to tell you more about this project in this blog post.
 
 # Summary
 
