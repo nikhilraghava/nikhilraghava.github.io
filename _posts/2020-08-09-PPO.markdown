@@ -146,4 +146,13 @@ $$ c_{1} $$ and $$ c_{2} $$ are coefficients, and $$ S $$ denotes an entropy bon
 
 PPO has two alternating threads. Each iteration, each of (parallel) actors collect time steps of data. Then we construct the surrogate loss on these  time steps of data and optimise it with mini-batch SGD (or usually for better performance, Adam), for $$ K $$ epochs.
 
-<center>🤯 Q.E.D. 🤯</center>
+# Performance
+
+The team at OpenAI compared PPO (with the clipped surrogate objective) to several other methods from the literature, which are considered to be effective for continuous problems. They compared PPO againts tuned implementations of the following algorithms: Trust Region Policy Optimization (TRPO), Cross-Entropy Method (CEM), Vanilla Policy Gradient with Adaptive stepsize, A2C, A2C with trust region. 
+
+A2C stands for advantage actor critic, and is a synchronous version of A3C, which they found to have the same or better performance than the asynchronous version. For PPO, they set the hyperparameter $$ \epsilon=0.2 $$.
+
+{% assign imgs = "../../assets/images/ppocomp.png," | split: ',' %}
+{% include image.html images=imgs maxwidth="100%" caption="Comparison of several algorithms on several MuJoCo environments, training for one million timesteps" %}<br class="img">
+
+In conclusion, we see that PPO outperforms the previous methods on almost all the continuous control environments and has the stability and reliability of trust-region methods but is much simpler to implement, requiring only a few lines of code change to a vanilla policy gradient implementation, applicable in more general settings for example, when using a joint architecture for the policy and value function, and has better overall performance.
