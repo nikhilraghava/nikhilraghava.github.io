@@ -217,6 +217,11 @@ li	{
 	margin-bottom: 10px;
 }
 
+li.link_button{ 
+	margin-left: 0px !important;
+	margin-bottom: 0px !important;
+}
+
 /* Line Height */
 #post-body, p { line-height:1.7; color: #333; font-size: 18px; }
 
@@ -543,6 +548,7 @@ Post List
 	border-top:1px solid #eee;
 	text-align:center;
 	padding-top:20px;
+	padding-bottom: 20px;
 	font-size:13px;
 	font-weight:500;
 	margin-top: 40px;
