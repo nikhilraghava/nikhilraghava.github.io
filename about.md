@@ -9,3 +9,5 @@ I am a Computer Engineering graduate from [Singapore Polytechnic](https://www.sp
 I have been awarded the [Tan Kah Kee Young Inventors’ Award](https://www.tkkfoundation.org.sg/young-inventors-awards) for my invention titled: Disaster Recovery with HOPE handset and COMPASS dashboard, along with my fellow inventors James and Bryan.
 
 I’m an autodidact who likes to learn about computing, electronics, space, and design during my free time. I use this personal website to collect and organize my thoughts and learning experiences into blog posts and tutorials. If you like my posts, kindly share it with people interested in these topics. I hope you find the content in my blog useful.
+
+{% include footer.html %}

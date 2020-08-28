@@ -66,3 +66,5 @@ profile: true
 		</ul>
 	</div>
 </div>
+
+{% include footer.html %}
