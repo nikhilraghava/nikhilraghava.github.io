@@ -15,7 +15,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
 
-paginate: 2000
+paginate: 10
 baseurl:
 domain_name: 'https://geekfile.xyz'
 
