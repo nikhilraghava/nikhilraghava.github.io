@@ -79,6 +79,11 @@ h2 {
 	color: #bbb;
 }
 
+video {
+    width: 100%    !important;
+	height: auto   !important;
+}
+
 br.img { 
 	display: block; /* makes it have a width */
     content: ""; /* clears default height */

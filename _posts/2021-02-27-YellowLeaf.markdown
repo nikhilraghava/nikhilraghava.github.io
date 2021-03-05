@@ -37,7 +37,7 @@ The Panama disease is caused by the strain Tropical Race 4 (TR4), which affects 
 
 Two external symptoms help characterize Panama disease of banana:
 
-- **Yellow leaf syndrome**, the yellowing of the border of the leaves which eventually leads to bending the petiole.
+- **Yellow leaf syndrome**, the yellowing of the border of the leaves which leads to bending the petiole.
 
 - **Green leaf syndrome**, which occurs in certain cultivars, marked by the persistence of the green color of the leaves followed by the bending of petiole as in yellow leaf syndrome.
 
@@ -49,7 +49,10 @@ As such, to prevent their banana plantations from being fully infected, farmers 
 
 To solve this problem, our team proposes a two-part edge-to-edge solution using deep learning and machine vision that could help farmers better identify the Panama disease quickly, called YellowLeaf.
 
-<iframe width="100%" height="450px" src="https://www.youtube.com/embed/v8RGX6YGfZE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<video controls>
+  <source src="../../assets/images/yellowleaf.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video><br>
 
 The first part of the solution is the YellowLeaf dashboard. It consists of a grid with each individual cell color-coded based on the probability that the represented plant is infected with the Panama disease. This real-time grid-based dashboard can intuitively represent information regarding the health of the plantation in regards to the disease, such as: the sector of plants affected, the distribution of disease and the spreading velocity of the disease.
 
@@ -79,7 +82,7 @@ The data uploaded to the DynamoDB database triggers an AWS Lambda which dissemin
 
 # Conclusion
 
-With YellowLeaf, we hoped tp improve the efficiency of surveying farms, decrease reaction time to disease outbreaks, and slow down disease spread in plants and/or crops such as bananas, all while providing real-time updates to the farmers on a grid-based layout overlayed onto a map. 
+With YellowLeaf, we hoped to improve the efficiency of surveying farms, decrease reaction time to disease outbreaks, and slow down disease spread in plants and/or crops such as bananas, all while providing real-time updates to the farmers on a grid-based layout overlayed onto a map. 
 
 If we were to develop our solution into a product, we would like to gather more data on a real farm to improve our solution, and eventually deploy it to banana farms in Laos, Indonesia or Vietnam which have high production and consumption of bananas, and eventually the whole of ASEAN and beyond. We hope that this solution will eventually reduce precious manpower and time required by the farmers to find and identify diseases manually.
 
